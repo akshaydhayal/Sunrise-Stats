@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import MetricCard from '@/components/MetricCard';
 import LastUpdated from '@/components/LastUpdated';
 import GlassAreaChart from '@/components/charts/GlassAreaChart';
+import TokenIcon from '@/components/TokenIcon';
 import { Users, UserPlus, TrendingUp, Activity, Box } from 'lucide-react';
 
 export default function HoldersDashboard() {
@@ -103,28 +104,28 @@ export default function HoldersDashboard() {
             title="HYPE Holders" 
             value={latestStats.tokens.HYPE ? latestStats.tokens.HYPE.total_holders.toLocaleString() : '0'}
             change={latestStats.tokens.HYPE ? `${latestStats.tokens.HYPE.holder_growth >= 0 ? '+' : ''}${latestStats.tokens.HYPE.holder_growth} today` : null}
-            icon={<UserPlus size={16} color="var(--chart-hype)" />}
+            icon={<TokenIcon symbol="HYPE" size={16} />}
             isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.holder_growth >= 0}
           />
           <MetricCard 
             title="MON Holders" 
             value={latestStats.tokens.MON ? latestStats.tokens.MON.total_holders.toLocaleString() : '0'}
             change={latestStats.tokens.MON ? `${latestStats.tokens.MON.holder_growth >= 0 ? '+' : ''}${latestStats.tokens.MON.holder_growth} today` : null}
-            icon={<Activity size={16} color="var(--chart-mon)" />}
+            icon={<TokenIcon symbol="MON" size={16} />}
             isPositive={latestStats.tokens.MON && latestStats.tokens.MON.holder_growth >= 0}
           />
           <MetricCard 
             title="INX Holders" 
             value={latestStats.tokens.INX ? latestStats.tokens.INX.total_holders.toLocaleString() : '0'}
             change={latestStats.tokens.INX ? `${latestStats.tokens.INX.holder_growth >= 0 ? '+' : ''}${latestStats.tokens.INX.holder_growth} today` : null}
-            icon={<Box size={16} color="var(--chart-inx)" />}
+            icon={<TokenIcon symbol="INX" size={16} />}
             isPositive={latestStats.tokens.INX && latestStats.tokens.INX.holder_growth >= 0}
           />
           <MetricCard 
             title="LIT Holders" 
             value={latestStats.tokens.LIT ? latestStats.tokens.LIT.total_holders.toLocaleString() : '0'}
             change={latestStats.tokens.LIT ? `${latestStats.tokens.LIT.holder_growth >= 0 ? '+' : ''}${latestStats.tokens.LIT.holder_growth} today` : null}
-            icon={<TrendingUp size={16} color="var(--chart-lit)" />}
+            icon={<TokenIcon symbol="LIT" size={16} />}
             isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.holder_growth >= 0}
           />
         </div>
@@ -152,7 +153,7 @@ export default function HoldersDashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <UserPlus size={16} color="var(--chart-hype)" />
+              <TokenIcon symbol="HYPE" size={16} />
               HYPE Holders Trend
             </div>
             <GlassAreaChart 
@@ -170,7 +171,7 @@ export default function HoldersDashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <UserPlus size={16} color="var(--chart-mon)" />
+              <TokenIcon symbol="MON" size={16} />
               MON Holders Trend
             </div>
             <GlassAreaChart 
@@ -188,7 +189,7 @@ export default function HoldersDashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <UserPlus size={16} color="var(--chart-inx)" />
+              <TokenIcon symbol="INX" size={16} />
               INX Holders Trend
             </div>
             <GlassAreaChart 
@@ -206,7 +207,7 @@ export default function HoldersDashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <UserPlus size={16} color="var(--chart-lit)" />
+              <TokenIcon symbol="LIT" size={16} />
               LIT Holders Trend
             </div>
             <GlassAreaChart 

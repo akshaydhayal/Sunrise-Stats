@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import MetricCard from '@/components/MetricCard';
 import LastUpdated from '@/components/LastUpdated';
 import GlassBarChart from '@/components/charts/GlassBarChart';
+import TokenIcon from '@/components/TokenIcon';
 import { BarChart2, Activity, DollarSign, Database, Box } from 'lucide-react';
 
 export default function VolumeDashboard() {
@@ -96,7 +97,7 @@ export default function VolumeDashboard() {
           <MetricCard 
             title="HYPE Net Buy Vol" 
             value={latestStats.tokens.HYPE ? `$${(Math.abs(latestStats.tokens.HYPE.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
-            icon={<Activity size={16} color="var(--chart-hype)" />}
+            icon={<TokenIcon symbol="HYPE" size={16} />}
             isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.net_buy_volume >= 0}
           />
         </div>
@@ -104,7 +105,7 @@ export default function VolumeDashboard() {
           <MetricCard 
             title="MON Net Buy Vol" 
             value={latestStats.tokens.MON ? `$${(Math.abs(latestStats.tokens.MON.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
-            icon={<DollarSign size={16} color="var(--chart-mon)" />}
+            icon={<TokenIcon symbol="MON" size={16} />}
             isPositive={latestStats.tokens.MON && latestStats.tokens.MON.net_buy_volume >= 0}
           />
         </div>
@@ -112,7 +113,7 @@ export default function VolumeDashboard() {
           <MetricCard 
             title="INX Net Buy Vol" 
             value={latestStats.tokens.INX ? `$${(Math.abs(latestStats.tokens.INX.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
-            icon={<Box size={16} color="var(--chart-inx)" />}
+            icon={<TokenIcon symbol="INX" size={16} />}
             isPositive={latestStats.tokens.INX && latestStats.tokens.INX.net_buy_volume >= 0}
           />
         </div>
@@ -120,7 +121,7 @@ export default function VolumeDashboard() {
           <MetricCard 
             title="LIT Net Buy Vol" 
             value={latestStats.tokens.LIT ? `$${(Math.abs(latestStats.tokens.LIT.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
-            icon={<BarChart2 size={16} color="var(--chart-lit)" />}
+            icon={<TokenIcon symbol="LIT" size={16} />}
             isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.net_buy_volume >= 0}
           />
         </div>
@@ -144,7 +145,7 @@ export default function VolumeDashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <Box size={16} color="var(--chart-hype)" />
+              <TokenIcon symbol="HYPE" size={16} />
               HYPE Net Buy Volume
             </div>
             <GlassBarChart 
@@ -158,7 +159,7 @@ export default function VolumeDashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <Box size={16} color="var(--chart-mon)" />
+              <TokenIcon symbol="MON" size={16} />
               MON Net Buy Volume
             </div>
             <GlassBarChart 
@@ -172,7 +173,7 @@ export default function VolumeDashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <Box size={16} color="var(--chart-inx)" />
+              <TokenIcon symbol="INX" size={16} />
               INX Net Buy Volume
             </div>
             <GlassBarChart 
@@ -186,7 +187,7 @@ export default function VolumeDashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <Box size={16} color="var(--chart-lit)" />
+              <TokenIcon symbol="LIT" size={16} />
               LIT Net Buy Volume
             </div>
             <GlassBarChart 

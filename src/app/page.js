@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import MetricCard from '@/components/MetricCard';
 import LastUpdated from '@/components/LastUpdated';
 import GlassAreaChart from '@/components/charts/GlassAreaChart';
+import TokenIcon from '@/components/TokenIcon';
 import { TrendingUp, Activity, DollarSign, Database, Box } from 'lucide-react';
 
 export default function Dashboard() {
@@ -102,25 +103,25 @@ export default function Dashboard() {
           <MetricCard 
             title="HYPE Market Cap" 
             value={latestStats.tokens.HYPE ? `$${(latestStats.tokens.HYPE.marketcap / 1000000).toFixed(2)}M` : '$0'}
-            icon={<TrendingUp size={16} color="var(--chart-hype)" />}
+            icon={<TokenIcon symbol="HYPE" size={16} />}
             isPositive={true}
           />
           <MetricCard 
             title="MON Market Cap" 
             value={latestStats.tokens.MON ? `$${(latestStats.tokens.MON.marketcap / 1000000).toFixed(2)}M` : '$0'}
-            icon={<Activity size={16} color="var(--chart-mon)" />}
+            icon={<TokenIcon symbol="MON" size={16} />}
             isPositive={true}
           />
           <MetricCard 
             title="INX Market Cap" 
             value={latestStats.tokens.INX ? `$${(latestStats.tokens.INX.marketcap / 1000000).toFixed(2)}M` : '$0'}
-            icon={<Box size={16} color="var(--chart-inx)" />}
+            icon={<TokenIcon symbol="INX" size={16} />}
             isPositive={true}
           />
           <MetricCard 
             title="LIT Market Cap" 
             value={latestStats.tokens.LIT ? `$${(latestStats.tokens.LIT.marketcap / 1000000).toFixed(2)}M` : '$0'}
-            icon={<TrendingUp size={16} color="var(--chart-lit)" />}
+            icon={<TokenIcon symbol="LIT" size={16} />}
             isPositive={true}
           />
         </div>
@@ -146,7 +147,7 @@ export default function Dashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <Box size={16} color="var(--chart-hype)" />
+              <TokenIcon symbol="HYPE" size={16} />
               HYPE Market Cap
             </div>
             <GlassAreaChart 
@@ -162,7 +163,7 @@ export default function Dashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <Box size={16} color="var(--chart-mon)" />
+              <TokenIcon symbol="MON" size={16} />
               MON Market Cap
             </div>
             <GlassAreaChart 
@@ -178,7 +179,7 @@ export default function Dashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <Box size={16} color="var(--chart-inx)" />
+              <TokenIcon symbol="INX" size={16} />
               INX Market Cap
             </div>
             <GlassAreaChart 
@@ -194,7 +195,7 @@ export default function Dashboard() {
         <div className="col-span-6">
           <div className="glass-panel">
             <div className="panel-title">
-              <Box size={16} color="var(--chart-lit)" />
+              <TokenIcon symbol="LIT" size={16} />
               LIT Market Cap
             </div>
             <GlassAreaChart 

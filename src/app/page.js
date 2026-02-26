@@ -77,26 +77,51 @@ export default function Dashboard() {
       </div>
 
       <div className="dashboard-grid">
-        {/* Top KPIs */}
-        <div className="col-span-4">
+        {/* Top KPIs - Current Market Cap Breakdown */}
+        <div className="col-span-12" style={{ marginBottom: '-8px' }}>
+          <h3 style={{ 
+            fontSize: '16px', 
+            fontWeight: '600', 
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            color: 'var(--text-muted)', 
+            borderBottom: '1px solid rgba(255,255,255,0.1)', 
+            paddingBottom: '12px' 
+          }}>
+            Current Market Cap Breakdown
+          </h3>
+        </div>
+
+        <div className="col-span-12" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '24px' }}>
           <MetricCard 
-            title="Total Market Cap" 
+            title="Total Memecoin Cap" 
             value={`$${(latestStats.totalMarketCap / 1000000).toFixed(2)}M`}
             icon={<DollarSign size={16} color="var(--primary-orange)" />}
+            isPositive={true}
           />
-        </div>
-        <div className="col-span-4">
           <MetricCard 
             title="HYPE Market Cap" 
             value={latestStats.tokens.HYPE ? `$${(latestStats.tokens.HYPE.marketcap / 1000000).toFixed(2)}M` : '$0'}
             icon={<TrendingUp size={16} color="var(--chart-hype)" />}
+            isPositive={true}
           />
-        </div>
-        <div className="col-span-4">
           <MetricCard 
             title="MON Market Cap" 
             value={latestStats.tokens.MON ? `$${(latestStats.tokens.MON.marketcap / 1000000).toFixed(2)}M` : '$0'}
             icon={<Activity size={16} color="var(--chart-mon)" />}
+            isPositive={true}
+          />
+          <MetricCard 
+            title="INX Market Cap" 
+            value={latestStats.tokens.INX ? `$${(latestStats.tokens.INX.marketcap / 1000000).toFixed(2)}M` : '$0'}
+            icon={<Box size={16} color="var(--chart-inx)" />}
+            isPositive={true}
+          />
+          <MetricCard 
+            title="LIT Market Cap" 
+            value={latestStats.tokens.LIT ? `$${(latestStats.tokens.LIT.marketcap / 1000000).toFixed(2)}M` : '$0'}
+            icon={<TrendingUp size={16} color="var(--chart-lit)" />}
+            isPositive={true}
           />
         </div>
 
@@ -112,6 +137,7 @@ export default function Dashboard() {
               dataKey="totalMarketCap" 
               stroke="var(--primary-orange)" 
               fill="var(--primary-orange)" 
+              height={350}
             />
           </div>
         </div>
@@ -123,14 +149,13 @@ export default function Dashboard() {
               <Box size={16} color="var(--chart-hype)" />
               HYPE Market Cap
             </div>
-            <div className="small-chart-container">
-              <GlassAreaChart 
-                data={chartData.tokens.HYPE || []} 
-                dataKey="marketcap" 
-                stroke="var(--chart-hype)" 
-                fill="var(--chart-hype)" 
-              />
-            </div>
+            <GlassAreaChart 
+              data={chartData.tokens.HYPE || []} 
+              dataKey="marketcap" 
+              stroke="var(--chart-hype)" 
+              fill="var(--chart-hype)" 
+              height={250}
+            />
           </div>
         </div>
 
@@ -140,14 +165,13 @@ export default function Dashboard() {
               <Box size={16} color="var(--chart-mon)" />
               MON Market Cap
             </div>
-            <div className="small-chart-container">
-              <GlassAreaChart 
-                data={chartData.tokens.MON || []} 
-                dataKey="marketcap" 
-                stroke="var(--chart-mon)" 
-                fill="var(--chart-mon)" 
-              />
-            </div>
+            <GlassAreaChart 
+              data={chartData.tokens.MON || []} 
+              dataKey="marketcap" 
+              stroke="var(--chart-mon)" 
+              fill="var(--chart-mon)" 
+              height={250}
+            />
           </div>
         </div>
         
@@ -157,14 +181,13 @@ export default function Dashboard() {
               <Box size={16} color="var(--chart-inx)" />
               INX Market Cap
             </div>
-            <div className="small-chart-container">
-              <GlassAreaChart 
-                data={chartData.tokens.INX || []} 
-                dataKey="marketcap" 
-                stroke="var(--chart-inx)" 
-                fill="var(--chart-inx)" 
-              />
-            </div>
+            <GlassAreaChart 
+              data={chartData.tokens.INX || []} 
+              dataKey="marketcap" 
+              stroke="var(--chart-inx)" 
+              fill="var(--chart-inx)" 
+              height={250}
+            />
           </div>
         </div>
         
@@ -174,14 +197,13 @@ export default function Dashboard() {
               <Box size={16} color="var(--chart-lit)" />
               LIT Market Cap
             </div>
-            <div className="small-chart-container">
-              <GlassAreaChart 
-                data={chartData.tokens.LIT || []} 
-                dataKey="marketcap" 
-                stroke="var(--chart-lit)" 
-                fill="var(--chart-lit)" 
-              />
-            </div>
+            <GlassAreaChart 
+              data={chartData.tokens.LIT || []} 
+              dataKey="marketcap" 
+              stroke="var(--chart-lit)" 
+              fill="var(--chart-lit)" 
+              height={250}
+            />
           </div>
         </div>
 

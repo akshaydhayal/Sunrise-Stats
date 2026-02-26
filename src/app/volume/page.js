@@ -77,29 +77,51 @@ export default function VolumeDashboard() {
       </div>
 
       <div className="dashboard-grid">
-        {/* Top KPIs */}
-        <div className="col-span-4">
-          <MetricCard 
-            title="Total Net Buy Volume" 
-            value={`$${(Math.abs(latestStats.total_net_buy_volume) / 1000).toFixed(2)}K`}
-            icon={<BarChart2 size={16} color="var(--primary-orange)" />}
-            isPositive={latestStats.total_net_buy_volume >= 0}
-          />
+        {/* Top KPIs - Current Day Net Volume */}
+        <div className="col-span-12" style={{ marginBottom: '-8px' }}>
+          <h3 style={{ 
+            fontSize: '16px', 
+            fontWeight: '600', 
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
+            color: 'var(--text-muted)', 
+            borderBottom: '1px solid rgba(255,255,255,0.1)', 
+            paddingBottom: '12px' 
+          }}>
+            Current Day Net Volume Breakdown
+          </h3>
         </div>
-        <div className="col-span-4">
+
+        <div className="col-span-3">
           <MetricCard 
-            title="HYPE Net Buy Volume" 
+            title="HYPE Net Buy Vol" 
             value={latestStats.tokens.HYPE ? `$${(Math.abs(latestStats.tokens.HYPE.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
             icon={<Activity size={16} color="var(--chart-hype)" />}
             isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.net_buy_volume >= 0}
           />
         </div>
-        <div className="col-span-4">
+        <div className="col-span-3">
           <MetricCard 
-            title="MON Net Buy Volume" 
+            title="MON Net Buy Vol" 
             value={latestStats.tokens.MON ? `$${(Math.abs(latestStats.tokens.MON.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
             icon={<DollarSign size={16} color="var(--chart-mon)" />}
             isPositive={latestStats.tokens.MON && latestStats.tokens.MON.net_buy_volume >= 0}
+          />
+        </div>
+        <div className="col-span-3">
+          <MetricCard 
+            title="INX Net Buy Vol" 
+            value={latestStats.tokens.INX ? `$${(Math.abs(latestStats.tokens.INX.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
+            icon={<Box size={16} color="var(--chart-inx)" />}
+            isPositive={latestStats.tokens.INX && latestStats.tokens.INX.net_buy_volume >= 0}
+          />
+        </div>
+        <div className="col-span-3">
+          <MetricCard 
+            title="LIT Net Buy Vol" 
+            value={latestStats.tokens.LIT ? `$${(Math.abs(latestStats.tokens.LIT.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
+            icon={<BarChart2 size={16} color="var(--chart-lit)" />}
+            isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.net_buy_volume >= 0}
           />
         </div>
 
@@ -113,6 +135,7 @@ export default function VolumeDashboard() {
             <GlassBarChart 
               data={chartData.overall} 
               dataKey="total_net_buy_volume" 
+              height={350}
             />
           </div>
         </div>
@@ -124,12 +147,11 @@ export default function VolumeDashboard() {
               <Box size={16} color="var(--chart-hype)" />
               HYPE Net Buy Volume
             </div>
-            <div className="small-chart-container">
-              <GlassBarChart 
-                data={chartData.tokens.HYPE || []} 
-                dataKey="net_buy_volume" 
-              />
-            </div>
+            <GlassBarChart 
+              data={chartData.tokens.HYPE || []} 
+              dataKey="net_buy_volume" 
+              height={250}
+            />
           </div>
         </div>
 
@@ -139,12 +161,11 @@ export default function VolumeDashboard() {
               <Box size={16} color="var(--chart-mon)" />
               MON Net Buy Volume
             </div>
-            <div className="small-chart-container">
-              <GlassBarChart 
-                data={chartData.tokens.MON || []} 
-                dataKey="net_buy_volume" 
-              />
-            </div>
+            <GlassBarChart 
+              data={chartData.tokens.MON || []} 
+              dataKey="net_buy_volume" 
+              height={250}
+            />
           </div>
         </div>
         
@@ -154,12 +175,11 @@ export default function VolumeDashboard() {
               <Box size={16} color="var(--chart-inx)" />
               INX Net Buy Volume
             </div>
-            <div className="small-chart-container">
-              <GlassBarChart 
-                data={chartData.tokens.INX || []} 
-                dataKey="net_buy_volume" 
-              />
-            </div>
+            <GlassBarChart 
+              data={chartData.tokens.INX || []} 
+              dataKey="net_buy_volume" 
+              height={250}
+            />
           </div>
         </div>
         
@@ -169,12 +189,11 @@ export default function VolumeDashboard() {
               <Box size={16} color="var(--chart-lit)" />
               LIT Net Buy Volume
             </div>
-            <div className="small-chart-container">
-              <GlassBarChart 
-                data={chartData.tokens.LIT || []} 
-                dataKey="net_buy_volume" 
-              />
-            </div>
+            <GlassBarChart 
+              data={chartData.tokens.LIT || []} 
+              dataKey="net_buy_volume" 
+              height={250}
+            />
           </div>
         </div>
 

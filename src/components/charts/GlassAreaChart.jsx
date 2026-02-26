@@ -13,7 +13,7 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
 
       return (
         <div style={{
-          backgroundColor: 'rgba(15, 12, 41, 0.9)', 
+          backgroundColor: 'rgba(10, 8, 22, 0.95)', 
           borderColor: 'rgba(255,255,255,0.1)',
           borderWidth: 1,
           borderStyle: 'solid',

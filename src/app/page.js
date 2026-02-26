@@ -34,7 +34,7 @@ export default function Dashboard() {
   if (loading) {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-        <h2 className="text-gradient">Loading Sunrise...</h2>
+        <h2 className="text-gradient">Loading MarketCap Data...</h2>
       </div>
     );
   }
@@ -94,7 +94,7 @@ export default function Dashboard() {
 
         <div className="col-span-12" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '24px' }}>
           <MetricCard 
-            title="Total Memecoin Cap" 
+            title="Total Assets Cap" 
             value={`$${(latestStats.totalMarketCap / 1000000).toFixed(2)}M`}
             icon={<DollarSign size={16} color="var(--primary-orange)" />}
             isPositive={true}

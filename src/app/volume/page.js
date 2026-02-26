@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import MetricCard from '@/components/MetricCard';
-import SyncButton from '@/components/SyncButton';
+import LastUpdated from '@/components/LastUpdated';
 import GlassBarChart from '@/components/charts/GlassBarChart';
 import { BarChart2, Activity, DollarSign, Database, Box } from 'lucide-react';
 
@@ -56,7 +56,7 @@ export default function VolumeDashboard() {
       <div>
         <div className="header-row">
           <h2>Net Buy Volume</h2>
-          <SyncButton onSyncComplete={fetchData} />
+          <LastUpdated syncKey="volume_sync" />
         </div>
         <div className="glass-panel" style={{ textAlign: 'center', padding: '60px 20px' }}>
           <h3>No Data Available</h3>
@@ -73,7 +73,7 @@ export default function VolumeDashboard() {
           <h2>Net Buy Volume</h2>
           <p style={{ color: 'var(--text-muted)', marginTop: '4px' }}>Buy vs Sell Volume of Canonical Assets</p>
         </div>
-        <SyncButton onSyncComplete={fetchData} />
+        <LastUpdated syncKey="volume_sync" />
       </div>
 
       <div className="dashboard-grid">

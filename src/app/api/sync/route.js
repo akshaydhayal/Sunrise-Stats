@@ -4,21 +4,28 @@ import dbConnect from '@/lib/mongodb';
 import AssetData from '@/models/AssetData';
 import VolumeData from '@/models/VolumeData';
 import HolderData from '@/models/HolderData';
+import AppMetadata from '@/models/AppMetadata';
 
 export async function POST(req) {
   try {
+    const body = await req.json();
+    const syncType = body.type; // expected: 'marketcap', 'volume', or 'holders'
+    
+    if (!syncType) {
+      return NextResponse.json({ success: false, error: 'Missing sync type' }, { status: 400 });
+    }
+
     await dbConnect();
-    
     const client = new DuneClient(process.env.DUNE_API_KEY);
+    let message = '';
+
+    if (syncType === 'marketcap') {
+      const query_result = await client.getLatestResult({ queryId: 6629448 });
+      let inserted = 0;
+      let updated = 0;
     
-    // FETCH ASSET MARKETCAP
-    const query_result = await client.getLatestResult({ queryId: 6629448 });
-    
-    let inserted = 0;
-    let updated = 0;
-    
-    if (query_result && query_result.result && query_result.result.rows) {
-      const rows = query_result.result.rows;
+      if (query_result && query_result.result && query_result.result.rows) {
+        const rows = query_result.result.rows;
       for (const row of rows) {
         if (!row.day || !row.token) continue;
         
@@ -45,13 +52,19 @@ export async function POST(req) {
           });
           inserted++;
         }
+        }
       }
-    }
 
-    // FETCH VOLUME DATA
-    let insertedVolume = 0;
-    let updatedVolume = 0;
-    try {
+      await AppMetadata.findOneAndUpdate(
+        { key: 'marketcap_sync' },
+        { lastSync: new Date() },
+        { upsert: true }
+      );
+      message = `Marketcap sync complete. Models (In: ${inserted}, Up: ${updated})`;
+
+    } else if (syncType === 'volume') {
+      let insertedVolume = 0;
+      let updatedVolume = 0;
       const volume_query_result = await client.getLatestResult({ queryId: 6747709 });
       if (volume_query_result && volume_query_result.result && volume_query_result.result.rows) {
         const vRows = volume_query_result.result.rows;
@@ -82,14 +95,17 @@ export async function POST(req) {
           }
         }
       }
-    } catch (volumeError) {
-      console.error("Volume Data Sync Error:", volumeError);
-    }
 
-    // FETCH HOLDERS DATA
-    let insertedHolders = 0;
-    let updatedHolders = 0;
-    try {
+      await AppMetadata.findOneAndUpdate(
+        { key: 'volume_sync' },
+        { lastSync: new Date() },
+        { upsert: true }
+      );
+      message = `Volume sync complete. Models (In: ${insertedVolume}, Up: ${updatedVolume})`;
+
+    } else if (syncType === 'holders') {
+      let insertedHolders = 0;
+      let updatedHolders = 0;
       const holders_query_result = await client.getLatestResult({ queryId: 6733727 });
       if (holders_query_result && holders_query_result.result && holders_query_result.result.rows) {
         const hRows = holders_query_result.result.rows;
@@ -118,13 +134,20 @@ export async function POST(req) {
           }
         }
       }
-    } catch (holdersError) {
-      console.error("Holders Data Sync Error:", holdersError);
+
+      await AppMetadata.findOneAndUpdate(
+        { key: 'holders_sync' },
+        { lastSync: new Date() },
+        { upsert: true }
+      );
+      message = `Holders sync complete. Models (In: ${insertedHolders}, Up: ${updatedHolders})`;
+    } else {
+      return NextResponse.json({ success: false, error: 'Invalid sync type' }, { status: 400 });
     }
 
     return NextResponse.json({ 
       success: true, 
-      message: `Sync complete. Assets (In: ${inserted}, Up: ${updated}). Volume (In: ${insertedVolume}, Up: ${updatedVolume}). Holders (In: ${insertedHolders}, Up: ${updatedHolders})` 
+      message: message 
     });
     
   } catch (error) {

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import MetricCard from '@/components/MetricCard';
-import SyncButton from '@/components/SyncButton';
+import LastUpdated from '@/components/LastUpdated';
 import GlassAreaChart from '@/components/charts/GlassAreaChart';
 import { Users, UserPlus, TrendingUp, Activity, Box } from 'lucide-react';
 
@@ -56,7 +56,7 @@ export default function HoldersDashboard() {
       <div>
         <div className="header-row">
           <h2>Token Holders</h2>
-          <SyncButton onSyncComplete={fetchData} />
+          <LastUpdated syncKey="holders_sync" />
         </div>
         <div className="glass-panel" style={{ textAlign: 'center', padding: '60px 20px' }}>
           <h3>No Data Available</h3>
@@ -73,7 +73,7 @@ export default function HoldersDashboard() {
           <h2>Token Holders</h2>
           <p style={{ color: 'var(--text-muted)', marginTop: '4px' }}>Unique holders across Canonical assets</p>
         </div>
-        <SyncButton onSyncComplete={fetchData} />
+        <LastUpdated syncKey="holders_sync" />
       </div>
 
       <div className="dashboard-grid">

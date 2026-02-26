@@ -1,0 +1,5 @@
+Key KPIs that we are interested in tracking is:
+Overall volume
+New holders
+Net-new buy volume (buy vs sell volume)
+Volume comparison to other DeFi and CEX venues

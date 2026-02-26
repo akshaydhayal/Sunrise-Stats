@@ -1,0 +1,2179 @@
+{
+    "execution_id": "01KJCMS3CHA77DYHRPW12JFJE1",
+    "query_id": 6747709,
+    "is_execution_finished": true,
+    "state": "QUERY_STATE_COMPLETED",
+    "submitted_at": "2026-02-26T09:34:16.978352Z",
+    "expires_at": "2026-05-27T09:34:42.076159Z",
+    "execution_started_at": "2026-02-26T09:34:17.489074Z",
+    "execution_ended_at": "2026-02-26T09:34:42.076149Z",
+    "result": {
+        "rows": [
+            {
+                "buy_volume_usd": 941221.4240601336,
+                "day": "2026-02-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": 89004.445298217,
+                "sell_volume_usd": 852216.9787619166,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 272.30588592710797,
+                "day": "2026-02-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": 25.444257222448982,
+                "sell_volume_usd": 246.86162870465898,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 25436.78840411141,
+                "day": "2026-02-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": 4734.185974526514,
+                "sell_volume_usd": 20702.602429584895,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 11017.55366569995,
+                "day": "2026-02-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": 3907.123502399334,
+                "sell_volume_usd": 7110.430163300616,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 6901773.31184297,
+                "day": "2026-02-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": -571937.9111970114,
+                "sell_volume_usd": 7473711.223039981,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 30919.81837637962,
+                "day": "2026-02-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": 11056.7289515763,
+                "sell_volume_usd": 19863.08942480332,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 296996.7987898941,
+                "day": "2026-02-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": 17052.133856733213,
+                "sell_volume_usd": 279944.6649331609,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 175815.8590042694,
+                "day": "2026-02-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": 13320.67557365427,
+                "sell_volume_usd": 162495.18343061514,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 3980313.4525553687,
+                "day": "2026-02-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": 201227.8318857574,
+                "sell_volume_usd": 3779085.6206696113,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 43763.09211082437,
+                "day": "2026-02-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": -24372.195111336165,
+                "sell_volume_usd": 68135.28722216054,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 92147.94863321722,
+                "day": "2026-02-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": -4707.417782925419,
+                "sell_volume_usd": 96855.36641614264,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 87763.22634993668,
+                "day": "2026-02-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": 22533.145942915507,
+                "sell_volume_usd": 65230.080407021174,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 4370305.560666837,
+                "day": "2026-02-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": -456168.2882568147,
+                "sell_volume_usd": 4826473.8489236515,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 46667.71342462087,
+                "day": "2026-02-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": 14877.34759074348,
+                "sell_volume_usd": 31790.365833877393,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 98273.52288093175,
+                "day": "2026-02-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": 4277.068902967891,
+                "sell_volume_usd": 93996.45397796386,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 216554.37471349002,
+                "day": "2026-02-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": 14619.431376591092,
+                "sell_volume_usd": 201934.94333689893,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1147175.7287757571,
+                "day": "2026-02-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": -80444.5063817862,
+                "sell_volume_usd": 1227620.2351575433,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 45739.34547685796,
+                "day": "2026-02-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": 15375.351181033828,
+                "sell_volume_usd": 30363.994295824134,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 84128.47048311785,
+                "day": "2026-02-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": -7075.49020889854,
+                "sell_volume_usd": 91203.9606920164,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 105590.75223484,
+                "day": "2026-02-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": -43496.48050839636,
+                "sell_volume_usd": 149087.23274323635,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1234589.2526991873,
+                "day": "2026-02-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": -484535.0771241924,
+                "sell_volume_usd": 1719124.3298233796,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 16417.2172395585,
+                "day": "2026-02-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": -3703.553627389054,
+                "sell_volume_usd": 20120.770866947554,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 91549.017424481,
+                "day": "2026-02-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": -8312.8809471961,
+                "sell_volume_usd": 99861.8983716771,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 41293.455187002386,
+                "day": "2026-02-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": -11475.534272532226,
+                "sell_volume_usd": 52768.98945953461,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 3720053.0035905335,
+                "day": "2026-02-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": 479356.8428542167,
+                "sell_volume_usd": 3240696.160736317,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 40198.930236685585,
+                "day": "2026-02-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": 10309.771590448057,
+                "sell_volume_usd": 29889.158646237527,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 166757.2422565584,
+                "day": "2026-02-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": 17498.497333662293,
+                "sell_volume_usd": 149258.74492289612,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 172001.47709898112,
+                "day": "2026-02-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": 28729.295730501588,
+                "sell_volume_usd": 143272.18136847953,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 3332353.46401462,
+                "day": "2026-02-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": 192095.4655641811,
+                "sell_volume_usd": 3140257.998450439,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 68734.6223756716,
+                "day": "2026-02-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": -9537.367626295832,
+                "sell_volume_usd": 78271.99000196744,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 134968.89492724644,
+                "day": "2026-02-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": 14510.955651762808,
+                "sell_volume_usd": 120457.93927548363,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 134102.15488930975,
+                "day": "2026-02-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": 41994.28150522635,
+                "sell_volume_usd": 92107.8733840834,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 4440101.91042923,
+                "day": "2026-02-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": -46515.52592801768,
+                "sell_volume_usd": 4486617.436357248,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 35530.97574648984,
+                "day": "2026-02-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": -1766.2847774861802,
+                "sell_volume_usd": 37297.26052397602,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 131551.05056479436,
+                "day": "2026-02-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": -4733.4546676897735,
+                "sell_volume_usd": 136284.50523248414,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 171285.48305065348,
+                "day": "2026-02-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": -60648.48907139164,
+                "sell_volume_usd": 231933.97212204512,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 2132110.4912171834,
+                "day": "2026-02-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": -341859.81771985814,
+                "sell_volume_usd": 2473970.3089370416,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 20767.486007575095,
+                "day": "2026-02-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": 5583.302538911928,
+                "sell_volume_usd": 15184.183468663166,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 124015.6478234844,
+                "day": "2026-02-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": -19466.006424627252,
+                "sell_volume_usd": 143481.65424811165,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 149977.65650886047,
+                "day": "2026-02-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": -13796.13458100037,
+                "sell_volume_usd": 163773.79108986084,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1770523.2306950632,
+                "day": "2026-02-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": 115901.39318224182,
+                "sell_volume_usd": 1654621.8375128214,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 24315.141168954247,
+                "day": "2026-02-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": -1381.3099199790195,
+                "sell_volume_usd": 25696.451088933267,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 225085.0441609026,
+                "day": "2026-02-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": 6380.37135610712,
+                "sell_volume_usd": 218704.67280479547,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 310212.0872820079,
+                "day": "2026-02-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": -8345.376375402499,
+                "sell_volume_usd": 318557.4636574104,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1733111.1333806287,
+                "day": "2026-02-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": -375854.8994429065,
+                "sell_volume_usd": 2108966.032823535,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 95517.65172793037,
+                "day": "2026-02-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": 2232.0231899121136,
+                "sell_volume_usd": 93285.62853801825,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 184632.97132418968,
+                "day": "2026-02-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": 17169.329803739238,
+                "sell_volume_usd": 167463.64152045044,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 447560.96281480725,
+                "day": "2026-02-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": 454.4643078360241,
+                "sell_volume_usd": 447106.4985069712,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1949836.6223863775,
+                "day": "2026-02-14 00:00:00.000 UTC",
+                "net_buy_volume_usd": -94485.23285391764,
+                "sell_volume_usd": 2044321.8552402952,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 57008.925541062425,
+                "day": "2026-02-14 00:00:00.000 UTC",
+                "net_buy_volume_usd": 2823.55528488852,
+                "sell_volume_usd": 54185.370256173905,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 158792.78383432646,
+                "day": "2026-02-14 00:00:00.000 UTC",
+                "net_buy_volume_usd": 299.5513791478006,
+                "sell_volume_usd": 158493.23245517866,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 389207.59681764134,
+                "day": "2026-02-14 00:00:00.000 UTC",
+                "net_buy_volume_usd": 10784.26100829331,
+                "sell_volume_usd": 378423.33580934803,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 2749116.6071761386,
+                "day": "2026-02-13 00:00:00.000 UTC",
+                "net_buy_volume_usd": -334382.419334366,
+                "sell_volume_usd": 3083499.0265105045,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 82887.67292707131,
+                "day": "2026-02-13 00:00:00.000 UTC",
+                "net_buy_volume_usd": 10949.245692658063,
+                "sell_volume_usd": 71938.42723441325,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 243402.48323346875,
+                "day": "2026-02-13 00:00:00.000 UTC",
+                "net_buy_volume_usd": 28310.455785250786,
+                "sell_volume_usd": 215092.02744821797,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 294064.8082806117,
+                "day": "2026-02-13 00:00:00.000 UTC",
+                "net_buy_volume_usd": 9681.736886690487,
+                "sell_volume_usd": 284383.0713939212,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 3914482.754791026,
+                "day": "2026-02-12 00:00:00.000 UTC",
+                "net_buy_volume_usd": 517238.56060214574,
+                "sell_volume_usd": 3397244.1941888803,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 94946.02508267335,
+                "day": "2026-02-12 00:00:00.000 UTC",
+                "net_buy_volume_usd": -48769.21440053705,
+                "sell_volume_usd": 143715.2394832104,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 139222.38181882614,
+                "day": "2026-02-12 00:00:00.000 UTC",
+                "net_buy_volume_usd": -32934.78264683194,
+                "sell_volume_usd": 172157.16446565808,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 132068.8592320388,
+                "day": "2026-02-12 00:00:00.000 UTC",
+                "net_buy_volume_usd": 23891.905529616575,
+                "sell_volume_usd": 108176.95370242224,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 4673099.557652071,
+                "day": "2026-02-11 00:00:00.000 UTC",
+                "net_buy_volume_usd": 651246.3193142493,
+                "sell_volume_usd": 4021853.238337822,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 73664.97024871144,
+                "day": "2026-02-11 00:00:00.000 UTC",
+                "net_buy_volume_usd": -18862.541986755736,
+                "sell_volume_usd": 92527.51223546718,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 112115.60772754301,
+                "day": "2026-02-11 00:00:00.000 UTC",
+                "net_buy_volume_usd": -6946.219851166723,
+                "sell_volume_usd": 119061.82757870974,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 361606.7407894769,
+                "day": "2026-02-11 00:00:00.000 UTC",
+                "net_buy_volume_usd": -9263.361861751764,
+                "sell_volume_usd": 370870.10265122866,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 3891252.336434558,
+                "day": "2026-02-10 00:00:00.000 UTC",
+                "net_buy_volume_usd": -1088329.178615692,
+                "sell_volume_usd": 4979581.51505025,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 81736.89741930764,
+                "day": "2026-02-10 00:00:00.000 UTC",
+                "net_buy_volume_usd": -23120.51640943889,
+                "sell_volume_usd": 104857.41382874653,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 114993.37224520945,
+                "day": "2026-02-10 00:00:00.000 UTC",
+                "net_buy_volume_usd": 42128.00090475571,
+                "sell_volume_usd": 72865.37134045374,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 426897.37641364033,
+                "day": "2026-02-10 00:00:00.000 UTC",
+                "net_buy_volume_usd": 15115.164330195985,
+                "sell_volume_usd": 411782.21208344435,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 4428427.701818797,
+                "day": "2026-02-09 00:00:00.000 UTC",
+                "net_buy_volume_usd": -395674.4973768508,
+                "sell_volume_usd": 4824102.199195648,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 54697.081534959216,
+                "day": "2026-02-09 00:00:00.000 UTC",
+                "net_buy_volume_usd": -7736.539764693742,
+                "sell_volume_usd": 62433.62129965296,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 123128.68578517836,
+                "day": "2026-02-09 00:00:00.000 UTC",
+                "net_buy_volume_usd": -438.1407731874642,
+                "sell_volume_usd": 123566.82655836582,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 52478.20535984001,
+                "day": "2026-02-09 00:00:00.000 UTC",
+                "net_buy_volume_usd": -4673.654743647858,
+                "sell_volume_usd": 57151.86010348787,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 5828308.732525417,
+                "day": "2026-02-08 00:00:00.000 UTC",
+                "net_buy_volume_usd": 633372.5689866617,
+                "sell_volume_usd": 5194936.163538755,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 41992.00450690001,
+                "day": "2026-02-08 00:00:00.000 UTC",
+                "net_buy_volume_usd": 3501.4820250443954,
+                "sell_volume_usd": 38490.522481855616,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 204890.61859341565,
+                "day": "2026-02-08 00:00:00.000 UTC",
+                "net_buy_volume_usd": 25123.637813605194,
+                "sell_volume_usd": 179766.98077981046,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 52679.28307109393,
+                "day": "2026-02-08 00:00:00.000 UTC",
+                "net_buy_volume_usd": 11285.354986967417,
+                "sell_volume_usd": 41393.92808412651,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 7006953.729676251,
+                "day": "2026-02-07 00:00:00.000 UTC",
+                "net_buy_volume_usd": -167488.55319229048,
+                "sell_volume_usd": 7174442.282868542,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 80215.4263833646,
+                "day": "2026-02-07 00:00:00.000 UTC",
+                "net_buy_volume_usd": -12867.681853304632,
+                "sell_volume_usd": 93083.10823666923,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 275296.41922596825,
+                "day": "2026-02-07 00:00:00.000 UTC",
+                "net_buy_volume_usd": 2193.2247404682566,
+                "sell_volume_usd": 273103.1944855,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 73595.17344223993,
+                "day": "2026-02-07 00:00:00.000 UTC",
+                "net_buy_volume_usd": -10265.734678607914,
+                "sell_volume_usd": 83860.90812084785,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 17099727.828427248,
+                "day": "2026-02-06 00:00:00.000 UTC",
+                "net_buy_volume_usd": -2975540.7607888356,
+                "sell_volume_usd": 20075268.589216083,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 53901.169423628446,
+                "day": "2026-02-06 00:00:00.000 UTC",
+                "net_buy_volume_usd": -11303.012452245515,
+                "sell_volume_usd": 65204.18187587396,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 632478.1247552764,
+                "day": "2026-02-06 00:00:00.000 UTC",
+                "net_buy_volume_usd": -9908.498129613465,
+                "sell_volume_usd": 642386.6228848898,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 153999.50309101492,
+                "day": "2026-02-06 00:00:00.000 UTC",
+                "net_buy_volume_usd": 10508.054829955305,
+                "sell_volume_usd": 143491.44826105962,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 14340670.332636556,
+                "day": "2026-02-05 00:00:00.000 UTC",
+                "net_buy_volume_usd": 313813.17764266767,
+                "sell_volume_usd": 14026857.154993888,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 178835.49359693984,
+                "day": "2026-02-05 00:00:00.000 UTC",
+                "net_buy_volume_usd": 26092.309564237425,
+                "sell_volume_usd": 152743.1840327024,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 541125.1528759791,
+                "day": "2026-02-05 00:00:00.000 UTC",
+                "net_buy_volume_usd": -3013.595917178667,
+                "sell_volume_usd": 544138.7487931577,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 321717.6407594319,
+                "day": "2026-02-05 00:00:00.000 UTC",
+                "net_buy_volume_usd": -21064.759924762708,
+                "sell_volume_usd": 342782.4006841946,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 13447600.079172337,
+                "day": "2026-02-04 00:00:00.000 UTC",
+                "net_buy_volume_usd": 1913181.5742698293,
+                "sell_volume_usd": 11534418.504902508,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 129495.0526856398,
+                "day": "2026-02-04 00:00:00.000 UTC",
+                "net_buy_volume_usd": 1689.4198611051252,
+                "sell_volume_usd": 127805.63282453468,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 282608.85736544896,
+                "day": "2026-02-04 00:00:00.000 UTC",
+                "net_buy_volume_usd": 11891.595776172355,
+                "sell_volume_usd": 270717.2615892766,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 170839.78143079244,
+                "day": "2026-02-04 00:00:00.000 UTC",
+                "net_buy_volume_usd": 12170.456432802777,
+                "sell_volume_usd": 158669.32499798966,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 12665348.239877876,
+                "day": "2026-02-03 00:00:00.000 UTC",
+                "net_buy_volume_usd": -1838473.7635863665,
+                "sell_volume_usd": 14503822.003464242,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 318469.6827774127,
+                "day": "2026-02-03 00:00:00.000 UTC",
+                "net_buy_volume_usd": 37843.10736320651,
+                "sell_volume_usd": 280626.5754142062,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 431858.4689258663,
+                "day": "2026-02-03 00:00:00.000 UTC",
+                "net_buy_volume_usd": 16510.764664130635,
+                "sell_volume_usd": 415347.70426173566,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 69097.24995728006,
+                "day": "2026-02-03 00:00:00.000 UTC",
+                "net_buy_volume_usd": 3627.0240729285943,
+                "sell_volume_usd": 65470.225884351465,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 7053022.199202214,
+                "day": "2026-02-02 00:00:00.000 UTC",
+                "net_buy_volume_usd": 461761.52203979995,
+                "sell_volume_usd": 6591260.677162414,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 141587.27752068423,
+                "day": "2026-02-02 00:00:00.000 UTC",
+                "net_buy_volume_usd": 20422.279188281085,
+                "sell_volume_usd": 121164.99833240315,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 391283.35915179405,
+                "day": "2026-02-02 00:00:00.000 UTC",
+                "net_buy_volume_usd": 3686.3989792531356,
+                "sell_volume_usd": 387596.9601725409,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 64731.24079582495,
+                "day": "2026-02-02 00:00:00.000 UTC",
+                "net_buy_volume_usd": -24445.631011505728,
+                "sell_volume_usd": 89176.87180733068,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 4444563.783881059,
+                "day": "2026-02-01 00:00:00.000 UTC",
+                "net_buy_volume_usd": -445081.1499030171,
+                "sell_volume_usd": 4889644.933784076,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 189833.38976527035,
+                "day": "2026-02-01 00:00:00.000 UTC",
+                "net_buy_volume_usd": 33795.34602222225,
+                "sell_volume_usd": 156038.0437430481,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 249188.23482995806,
+                "day": "2026-02-01 00:00:00.000 UTC",
+                "net_buy_volume_usd": 522.5359993270831,
+                "sell_volume_usd": 248665.69883063098,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 61032.748707467945,
+                "day": "2026-02-01 00:00:00.000 UTC",
+                "net_buy_volume_usd": -51089.72803671995,
+                "sell_volume_usd": 112122.4767441879,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 6845202.3787057195,
+                "day": "2026-01-31 00:00:00.000 UTC",
+                "net_buy_volume_usd": 580419.1854080185,
+                "sell_volume_usd": 6264783.193297701,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 404705.50529966893,
+                "day": "2026-01-31 00:00:00.000 UTC",
+                "net_buy_volume_usd": 117348.1162669076,
+                "sell_volume_usd": 287357.38903276133,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 363278.12702497875,
+                "day": "2026-01-31 00:00:00.000 UTC",
+                "net_buy_volume_usd": 4344.340869185224,
+                "sell_volume_usd": 358933.7861557935,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 345039.4182289429,
+                "day": "2026-01-31 00:00:00.000 UTC",
+                "net_buy_volume_usd": 62858.6872240323,
+                "sell_volume_usd": 282180.7310049106,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 4852733.328078769,
+                "day": "2026-01-30 00:00:00.000 UTC",
+                "net_buy_volume_usd": 60719.58213928249,
+                "sell_volume_usd": 4792013.745939487,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 181727.28126601074,
+                "day": "2026-01-30 00:00:00.000 UTC",
+                "net_buy_volume_usd": 83580.25176505113,
+                "sell_volume_usd": 98147.02950095962,
+                "token": "INX"
+            },
+            {
+                "buy_volume_usd": 451301.2420044381,
+                "day": "2026-01-30 00:00:00.000 UTC",
+                "net_buy_volume_usd": -3762.954578837089,
+                "sell_volume_usd": 455064.1965832752,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 306641.15537643316,
+                "day": "2026-01-30 00:00:00.000 UTC",
+                "net_buy_volume_usd": 17001.836570380605,
+                "sell_volume_usd": 289639.31880605256,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1681935.4252658493,
+                "day": "2026-01-29 00:00:00.000 UTC",
+                "net_buy_volume_usd": -497194.02072925563,
+                "sell_volume_usd": 2179129.445995105,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 353428.0059420766,
+                "day": "2026-01-29 00:00:00.000 UTC",
+                "net_buy_volume_usd": -3931.7956353545305,
+                "sell_volume_usd": 357359.80157743115,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 160642.69438310718,
+                "day": "2026-01-29 00:00:00.000 UTC",
+                "net_buy_volume_usd": -7045.771123766346,
+                "sell_volume_usd": 167688.46550687353,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1661140.5000321195,
+                "day": "2026-01-28 00:00:00.000 UTC",
+                "net_buy_volume_usd": 142723.15496762889,
+                "sell_volume_usd": 1518417.3450644906,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 291559.95875754027,
+                "day": "2026-01-28 00:00:00.000 UTC",
+                "net_buy_volume_usd": 22785.898547493154,
+                "sell_volume_usd": 268774.0602100471,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 175583.7357490926,
+                "day": "2026-01-28 00:00:00.000 UTC",
+                "net_buy_volume_usd": 14191.124391515448,
+                "sell_volume_usd": 161392.61135757715,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 2432040.066350571,
+                "day": "2026-01-27 00:00:00.000 UTC",
+                "net_buy_volume_usd": 417087.9284824268,
+                "sell_volume_usd": 2014952.137868144,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 261753.57431494267,
+                "day": "2026-01-27 00:00:00.000 UTC",
+                "net_buy_volume_usd": 8231.695454961155,
+                "sell_volume_usd": 253521.87885998152,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 305223.16559879796,
+                "day": "2026-01-27 00:00:00.000 UTC",
+                "net_buy_volume_usd": 40849.1455640769,
+                "sell_volume_usd": 264374.02003472106,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 635047.1940223327,
+                "day": "2026-01-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": 143617.73162966344,
+                "sell_volume_usd": 491429.46239266923,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 291342.94269456965,
+                "day": "2026-01-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": -9103.878188146162,
+                "sell_volume_usd": 300446.8208827158,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 114545.23621473616,
+                "day": "2026-01-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": 22066.651207235744,
+                "sell_volume_usd": 92478.58500750041,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 361846.49736577674,
+                "day": "2026-01-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": 8020.238507099741,
+                "sell_volume_usd": 353826.258858677,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 208104.68404012307,
+                "day": "2026-01-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": -120.48751664956217,
+                "sell_volume_usd": 208225.17155677264,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 108915.88836791148,
+                "day": "2026-01-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": -43053.75237449704,
+                "sell_volume_usd": 151969.64074240852,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 383302.7536459104,
+                "day": "2026-01-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": 44422.54153708246,
+                "sell_volume_usd": 338880.21210882795,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 183213.6094658957,
+                "day": "2026-01-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": 8314.389993768156,
+                "sell_volume_usd": 174899.21947212753,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 193478.2407144963,
+                "day": "2026-01-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": 43619.80007802753,
+                "sell_volume_usd": 149858.44063646876,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 878923.8392764104,
+                "day": "2026-01-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": 312450.704533902,
+                "sell_volume_usd": 566473.1347425084,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 391694.5822960956,
+                "day": "2026-01-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": 5404.956670505868,
+                "sell_volume_usd": 386289.62562558975,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 193297.80273158292,
+                "day": "2026-01-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": 35480.29389592935,
+                "sell_volume_usd": 157817.50883565357,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 859980.875556025,
+                "day": "2026-01-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": 8318.99458667566,
+                "sell_volume_usd": 851661.8809693493,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 282269.67294957634,
+                "day": "2026-01-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": 7369.663597794599,
+                "sell_volume_usd": 274900.00935178174,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 121298.81322213256,
+                "day": "2026-01-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": -45330.30977430468,
+                "sell_volume_usd": 166629.12299643725,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 874822.1641604606,
+                "day": "2026-01-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": 33831.05606701772,
+                "sell_volume_usd": 840991.1080934429,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 369489.1580954673,
+                "day": "2026-01-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": -2483.507709967729,
+                "sell_volume_usd": 371972.66580543504,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 222686.63736353055,
+                "day": "2026-01-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": 43793.09198315372,
+                "sell_volume_usd": 178893.54538037683,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 829608.3564270695,
+                "day": "2026-01-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": -226860.1802401347,
+                "sell_volume_usd": 1056468.5366672042,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 336454.4106780585,
+                "day": "2026-01-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": -31870.38116692746,
+                "sell_volume_usd": 368324.791844986,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 191076.6336934383,
+                "day": "2026-01-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": -49803.93934903573,
+                "sell_volume_usd": 240880.57304247405,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 502497.2966371556,
+                "day": "2026-01-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": -28693.422412531218,
+                "sell_volume_usd": 531190.7190496868,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 98184.17526040919,
+                "day": "2026-01-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": -53147.76169012496,
+                "sell_volume_usd": 151331.93695053415,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 206665.2092009219,
+                "day": "2026-01-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": -41065.28779465557,
+                "sell_volume_usd": 247730.49699557747,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 297106.21861715795,
+                "day": "2026-01-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": -33188.29830053111,
+                "sell_volume_usd": 330294.51691768906,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 146727.78400780927,
+                "day": "2026-01-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": -25697.121607723646,
+                "sell_volume_usd": 172424.90561553292,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 162843.599227608,
+                "day": "2026-01-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": 7138.934537476249,
+                "sell_volume_usd": 155704.66469013176,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 230582.75910042448,
+                "day": "2026-01-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": 64384.813575617736,
+                "sell_volume_usd": 166197.94552480674,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 151662.0027587713,
+                "day": "2026-01-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": 21642.519994251765,
+                "sell_volume_usd": 130019.48276451953,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 304505.41368595144,
+                "day": "2026-01-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": -12745.790368006215,
+                "sell_volume_usd": 317251.20405395766,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 339557.1511125642,
+                "day": "2026-01-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": -9896.97031917941,
+                "sell_volume_usd": 349454.1214317436,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 192893.53355279792,
+                "day": "2026-01-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": -27774.56476980468,
+                "sell_volume_usd": 220668.0983226026,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 195960.382431581,
+                "day": "2026-01-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": -9694.556804315565,
+                "sell_volume_usd": 205654.93923589657,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 640711.7278932665,
+                "day": "2026-01-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": -134515.45046132093,
+                "sell_volume_usd": 775227.1783545874,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 144535.07549684847,
+                "day": "2026-01-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": 16139.141962605747,
+                "sell_volume_usd": 128395.93353424272,
+                "token": "LIT"
+            },
+            {
+                "buy_volume_usd": 251128.00706139812,
+                "day": "2026-01-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": -46702.09806257626,
+                "sell_volume_usd": 297830.1051239744,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 813811.4053229379,
+                "day": "2026-01-14 00:00:00.000 UTC",
+                "net_buy_volume_usd": 8674.6912409059,
+                "sell_volume_usd": 805136.714082032,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 328215.0113357491,
+                "day": "2026-01-14 00:00:00.000 UTC",
+                "net_buy_volume_usd": -41020.31540106784,
+                "sell_volume_usd": 369235.32673681696,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 675100.5320974347,
+                "day": "2026-01-13 00:00:00.000 UTC",
+                "net_buy_volume_usd": 154990.32619548944,
+                "sell_volume_usd": 520110.2059019453,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 373241.76825613424,
+                "day": "2026-01-13 00:00:00.000 UTC",
+                "net_buy_volume_usd": 45397.00404534134,
+                "sell_volume_usd": 327844.7642107929,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 656710.199895531,
+                "day": "2026-01-12 00:00:00.000 UTC",
+                "net_buy_volume_usd": -88974.99742203916,
+                "sell_volume_usd": 745685.1973175702,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 519623.1031157103,
+                "day": "2026-01-12 00:00:00.000 UTC",
+                "net_buy_volume_usd": -479.5749492581235,
+                "sell_volume_usd": 520102.67806496844,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 516106.9780234616,
+                "day": "2026-01-11 00:00:00.000 UTC",
+                "net_buy_volume_usd": -1982.7017479635542,
+                "sell_volume_usd": 518089.67977142514,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 283201.8647243969,
+                "day": "2026-01-11 00:00:00.000 UTC",
+                "net_buy_volume_usd": -44737.0282419775,
+                "sell_volume_usd": 327938.8929663744,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 474396.45402435545,
+                "day": "2026-01-10 00:00:00.000 UTC",
+                "net_buy_volume_usd": -246459.24037736648,
+                "sell_volume_usd": 720855.6944017219,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 372191.0714049201,
+                "day": "2026-01-10 00:00:00.000 UTC",
+                "net_buy_volume_usd": -89494.19059480022,
+                "sell_volume_usd": 461685.2619997203,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 453066.7186242396,
+                "day": "2026-01-09 00:00:00.000 UTC",
+                "net_buy_volume_usd": -102550.9700292708,
+                "sell_volume_usd": 555617.6886535104,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 629627.2643145485,
+                "day": "2026-01-09 00:00:00.000 UTC",
+                "net_buy_volume_usd": -128685.7599174009,
+                "sell_volume_usd": 758313.0242319494,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 449455.6251523751,
+                "day": "2026-01-08 00:00:00.000 UTC",
+                "net_buy_volume_usd": -86651.53506704525,
+                "sell_volume_usd": 536107.1602194203,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 795570.6334288688,
+                "day": "2026-01-08 00:00:00.000 UTC",
+                "net_buy_volume_usd": 52522.80589618243,
+                "sell_volume_usd": 743047.8275326864,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 708119.715347795,
+                "day": "2026-01-07 00:00:00.000 UTC",
+                "net_buy_volume_usd": -56611.6532856297,
+                "sell_volume_usd": 764731.3686334247,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 699691.3920628594,
+                "day": "2026-01-07 00:00:00.000 UTC",
+                "net_buy_volume_usd": -119672.84748727083,
+                "sell_volume_usd": 819364.2395501302,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1247875.3355740046,
+                "day": "2026-01-06 00:00:00.000 UTC",
+                "net_buy_volume_usd": 76850.34482181724,
+                "sell_volume_usd": 1171024.9907521873,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1290670.1801552477,
+                "day": "2026-01-06 00:00:00.000 UTC",
+                "net_buy_volume_usd": 58555.41320742015,
+                "sell_volume_usd": 1232114.7669478275,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 986075.8435046442,
+                "day": "2026-01-05 00:00:00.000 UTC",
+                "net_buy_volume_usd": -42871.48446977581,
+                "sell_volume_usd": 1028947.32797442,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 835018.3383063007,
+                "day": "2026-01-05 00:00:00.000 UTC",
+                "net_buy_volume_usd": -69092.8942790993,
+                "sell_volume_usd": 904111.2325854,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 778802.8957653171,
+                "day": "2026-01-04 00:00:00.000 UTC",
+                "net_buy_volume_usd": 141301.72812513483,
+                "sell_volume_usd": 637501.1676401823,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 694724.5271140605,
+                "day": "2026-01-04 00:00:00.000 UTC",
+                "net_buy_volume_usd": -14015.448475738871,
+                "sell_volume_usd": 708739.9755897993,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 404923.88417856983,
+                "day": "2026-01-03 00:00:00.000 UTC",
+                "net_buy_volume_usd": 30170.7545049623,
+                "sell_volume_usd": 374753.12967360753,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1226930.9812429636,
+                "day": "2026-01-03 00:00:00.000 UTC",
+                "net_buy_volume_usd": 94928.98435990768,
+                "sell_volume_usd": 1132001.996883056,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 503520.3708791845,
+                "day": "2026-01-02 00:00:00.000 UTC",
+                "net_buy_volume_usd": -54956.8468543755,
+                "sell_volume_usd": 558477.21773356,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 2135162.6224469985,
+                "day": "2026-01-02 00:00:00.000 UTC",
+                "net_buy_volume_usd": 141172.35437506717,
+                "sell_volume_usd": 1993990.2680719313,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 473498.3426768503,
+                "day": "2026-01-01 00:00:00.000 UTC",
+                "net_buy_volume_usd": -106777.47966624988,
+                "sell_volume_usd": 580275.8223431002,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 659703.6059112602,
+                "day": "2026-01-01 00:00:00.000 UTC",
+                "net_buy_volume_usd": 28811.002735631424,
+                "sell_volume_usd": 630892.6031756288,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 305446.3714424486,
+                "day": "2025-12-31 00:00:00.000 UTC",
+                "net_buy_volume_usd": -36513.489099979575,
+                "sell_volume_usd": 341959.86054242816,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 934674.6475191753,
+                "day": "2025-12-31 00:00:00.000 UTC",
+                "net_buy_volume_usd": 7188.871404316276,
+                "sell_volume_usd": 927485.776114859,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 490698.0727606508,
+                "day": "2025-12-30 00:00:00.000 UTC",
+                "net_buy_volume_usd": -1742.9593328380142,
+                "sell_volume_usd": 492441.0320934888,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 571920.4803105206,
+                "day": "2025-12-30 00:00:00.000 UTC",
+                "net_buy_volume_usd": 37398.27090208628,
+                "sell_volume_usd": 534522.2094084343,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 493301.12674818066,
+                "day": "2025-12-29 00:00:00.000 UTC",
+                "net_buy_volume_usd": 50747.77406373341,
+                "sell_volume_usd": 442553.35268444725,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 961670.7811412446,
+                "day": "2025-12-29 00:00:00.000 UTC",
+                "net_buy_volume_usd": -14158.134152586572,
+                "sell_volume_usd": 975828.9152938311,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 275715.81656072196,
+                "day": "2025-12-28 00:00:00.000 UTC",
+                "net_buy_volume_usd": -45006.46866860712,
+                "sell_volume_usd": 320722.2852293291,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 546748.848143461,
+                "day": "2025-12-28 00:00:00.000 UTC",
+                "net_buy_volume_usd": -31193.342541494872,
+                "sell_volume_usd": 577942.1906849559,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 278218.55294014915,
+                "day": "2025-12-27 00:00:00.000 UTC",
+                "net_buy_volume_usd": -14036.142895150057,
+                "sell_volume_usd": 292254.6958352992,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 522565.46579212556,
+                "day": "2025-12-27 00:00:00.000 UTC",
+                "net_buy_volume_usd": -13595.996670093155,
+                "sell_volume_usd": 536161.4624622187,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 382079.71671218023,
+                "day": "2025-12-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": 105569.75924166653,
+                "sell_volume_usd": 276509.9574705137,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 947248.1415650955,
+                "day": "2025-12-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": 1884.861927625956,
+                "sell_volume_usd": 945363.2796374696,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 251330.36676593745,
+                "day": "2025-12-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": -41435.25521466954,
+                "sell_volume_usd": 292765.621980607,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1458402.3674363473,
+                "day": "2025-12-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": 36222.29412872088,
+                "sell_volume_usd": 1422180.0733076264,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 368171.8745857389,
+                "day": "2025-12-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": 127065.94648414463,
+                "sell_volume_usd": 241105.92810159424,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1150943.86686653,
+                "day": "2025-12-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": 109149.12451984524,
+                "sell_volume_usd": 1041794.7423466847,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 322917.9319838453,
+                "day": "2025-12-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": -50762.094969800266,
+                "sell_volume_usd": 373680.0269536456,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 872925.3698276154,
+                "day": "2025-12-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": 18114.409335346427,
+                "sell_volume_usd": 854810.960492269,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 543959.2595009551,
+                "day": "2025-12-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": 18623.386993361288,
+                "sell_volume_usd": 525335.8725075938,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1034198.2906024433,
+                "day": "2025-12-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": -43782.771562327864,
+                "sell_volume_usd": 1077981.0621647711,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 333315.96453166,
+                "day": "2025-12-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": -7770.667474525631,
+                "sell_volume_usd": 341086.63200618565,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 609227.0604272094,
+                "day": "2025-12-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": 41184.29775638331,
+                "sell_volume_usd": 568042.762670826,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 322781.1945013215,
+                "day": "2025-12-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": 7436.893027297803,
+                "sell_volume_usd": 315344.30147402367,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 249196.20294865238,
+                "day": "2025-12-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": -11976.655137313996,
+                "sell_volume_usd": 261172.85808596638,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 720229.287049058,
+                "day": "2025-12-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": 62311.36393998645,
+                "sell_volume_usd": 657917.9231090716,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 478078.1033515089,
+                "day": "2025-12-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": 73342.94240515545,
+                "sell_volume_usd": 404735.16094635346,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1109949.5226479566,
+                "day": "2025-12-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": -118006.45173735404,
+                "sell_volume_usd": 1227955.9743853107,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 613405.5517705813,
+                "day": "2025-12-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": 14291.456157561392,
+                "sell_volume_usd": 599114.0956130199,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1210053.5464928271,
+                "day": "2025-12-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": -91976.93477926753,
+                "sell_volume_usd": 1302030.4812720947,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 742916.1272212933,
+                "day": "2025-12-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": -83006.60495606076,
+                "sell_volume_usd": 825922.732177354,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 660756.9370872789,
+                "day": "2025-12-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": -89302.57265428535,
+                "sell_volume_usd": 750059.5097415643,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1055532.983675307,
+                "day": "2025-12-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": 15256.171454978525,
+                "sell_volume_usd": 1040276.8122203284,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 758572.7868658789,
+                "day": "2025-12-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": -25775.44484046416,
+                "sell_volume_usd": 784348.231706343,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 5074225.537013566,
+                "day": "2025-12-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": -141730.04787584115,
+                "sell_volume_usd": 5215955.584889407,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 512884.0610250011,
+                "day": "2025-12-14 00:00:00.000 UTC",
+                "net_buy_volume_usd": -13686.40240795887,
+                "sell_volume_usd": 526570.46343296,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 2655230.657410337,
+                "day": "2025-12-14 00:00:00.000 UTC",
+                "net_buy_volume_usd": -150017.18714942783,
+                "sell_volume_usd": 2805247.844559765,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 564001.1386710824,
+                "day": "2025-12-13 00:00:00.000 UTC",
+                "net_buy_volume_usd": 57205.67471029272,
+                "sell_volume_usd": 506795.4639607897,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1092446.849731514,
+                "day": "2025-12-13 00:00:00.000 UTC",
+                "net_buy_volume_usd": -45389.83723858232,
+                "sell_volume_usd": 1137836.6869700963,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1001539.1915576025,
+                "day": "2025-12-12 00:00:00.000 UTC",
+                "net_buy_volume_usd": -15115.023335201084,
+                "sell_volume_usd": 1016654.2148928036,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1425774.4957704307,
+                "day": "2025-12-12 00:00:00.000 UTC",
+                "net_buy_volume_usd": -87397.83258763794,
+                "sell_volume_usd": 1513172.3283580686,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 796829.8212764137,
+                "day": "2025-12-11 00:00:00.000 UTC",
+                "net_buy_volume_usd": 23976.03949182527,
+                "sell_volume_usd": 772853.7817845885,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1415249.7773257336,
+                "day": "2025-12-11 00:00:00.000 UTC",
+                "net_buy_volume_usd": -100456.21408920595,
+                "sell_volume_usd": 1515705.9914149395,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 908705.0439716025,
+                "day": "2025-12-10 00:00:00.000 UTC",
+                "net_buy_volume_usd": 56492.756866713986,
+                "sell_volume_usd": 852212.2871048885,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 2516903.455748013,
+                "day": "2025-12-10 00:00:00.000 UTC",
+                "net_buy_volume_usd": -24010.58282193262,
+                "sell_volume_usd": 2540914.038569946,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1012899.958702542,
+                "day": "2025-12-09 00:00:00.000 UTC",
+                "net_buy_volume_usd": -131486.37855831918,
+                "sell_volume_usd": 1144386.3372608612,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1975351.357209981,
+                "day": "2025-12-09 00:00:00.000 UTC",
+                "net_buy_volume_usd": -88854.49465516373,
+                "sell_volume_usd": 2064205.8518651447,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 743620.739911958,
+                "day": "2025-12-08 00:00:00.000 UTC",
+                "net_buy_volume_usd": -33603.43095864321,
+                "sell_volume_usd": 777224.1708706012,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 2300615.012266124,
+                "day": "2025-12-08 00:00:00.000 UTC",
+                "net_buy_volume_usd": 224887.279024977,
+                "sell_volume_usd": 2075727.7332411471,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 753496.5773440686,
+                "day": "2025-12-07 00:00:00.000 UTC",
+                "net_buy_volume_usd": -128645.50014165055,
+                "sell_volume_usd": 882142.0774857191,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 2442018.218895185,
+                "day": "2025-12-07 00:00:00.000 UTC",
+                "net_buy_volume_usd": -149728.55968888616,
+                "sell_volume_usd": 2591746.778584071,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 407791.4833752123,
+                "day": "2025-12-06 00:00:00.000 UTC",
+                "net_buy_volume_usd": -3521.6624369685305,
+                "sell_volume_usd": 411313.1458121808,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1731835.0581653167,
+                "day": "2025-12-06 00:00:00.000 UTC",
+                "net_buy_volume_usd": 43854.81963101681,
+                "sell_volume_usd": 1687980.2385343,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 513219.0346621832,
+                "day": "2025-12-05 00:00:00.000 UTC",
+                "net_buy_volume_usd": -112488.16454317007,
+                "sell_volume_usd": 625707.1992053533,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1841222.3437136149,
+                "day": "2025-12-05 00:00:00.000 UTC",
+                "net_buy_volume_usd": -21822.262684073765,
+                "sell_volume_usd": 1863044.6063976886,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 574450.8608856994,
+                "day": "2025-12-04 00:00:00.000 UTC",
+                "net_buy_volume_usd": 20281.905601697857,
+                "sell_volume_usd": 554168.9552840015,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 2963592.1913131704,
+                "day": "2025-12-04 00:00:00.000 UTC",
+                "net_buy_volume_usd": -222239.62530686334,
+                "sell_volume_usd": 3185831.8166200337,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 839439.5190857004,
+                "day": "2025-12-03 00:00:00.000 UTC",
+                "net_buy_volume_usd": 18725.25390013517,
+                "sell_volume_usd": 820714.2651855652,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 3734336.557022716,
+                "day": "2025-12-03 00:00:00.000 UTC",
+                "net_buy_volume_usd": -47719.43750511017,
+                "sell_volume_usd": 3782055.994527826,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1408914.422900067,
+                "day": "2025-12-02 00:00:00.000 UTC",
+                "net_buy_volume_usd": 40763.949593571946,
+                "sell_volume_usd": 1368150.473306495,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 6720346.748778942,
+                "day": "2025-12-02 00:00:00.000 UTC",
+                "net_buy_volume_usd": 354134.47948094923,
+                "sell_volume_usd": 6366212.269297993,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1084411.845076031,
+                "day": "2025-12-01 00:00:00.000 UTC",
+                "net_buy_volume_usd": -17262.742895188043,
+                "sell_volume_usd": 1101674.587971219,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 8723186.743299209,
+                "day": "2025-12-01 00:00:00.000 UTC",
+                "net_buy_volume_usd": -3258.665600705892,
+                "sell_volume_usd": 8726445.408899914,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 451690.94891088037,
+                "day": "2025-11-30 00:00:00.000 UTC",
+                "net_buy_volume_usd": -132417.81150213676,
+                "sell_volume_usd": 584108.7604130171,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 10000225.13573407,
+                "day": "2025-11-30 00:00:00.000 UTC",
+                "net_buy_volume_usd": -320606.61054018326,
+                "sell_volume_usd": 10320831.746274253,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 637172.8493331929,
+                "day": "2025-11-29 00:00:00.000 UTC",
+                "net_buy_volume_usd": -11973.564010984148,
+                "sell_volume_usd": 649146.4133441771,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 7374013.899500493,
+                "day": "2025-11-29 00:00:00.000 UTC",
+                "net_buy_volume_usd": 24142.38885122072,
+                "sell_volume_usd": 7349871.510649272,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 594081.6773125213,
+                "day": "2025-11-28 00:00:00.000 UTC",
+                "net_buy_volume_usd": 33546.58172211237,
+                "sell_volume_usd": 560535.0955904089,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 8644819.719536558,
+                "day": "2025-11-28 00:00:00.000 UTC",
+                "net_buy_volume_usd": -769040.405996805,
+                "sell_volume_usd": 9413860.125533363,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 389991.5207625528,
+                "day": "2025-11-27 00:00:00.000 UTC",
+                "net_buy_volume_usd": -19096.83636256639,
+                "sell_volume_usd": 409088.3571251192,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 11035857.898360483,
+                "day": "2025-11-27 00:00:00.000 UTC",
+                "net_buy_volume_usd": -492792.1158002112,
+                "sell_volume_usd": 11528650.014160695,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 815491.5919200231,
+                "day": "2025-11-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": 49365.50445463089,
+                "sell_volume_usd": 766126.0874653922,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 24199977.685630884,
+                "day": "2025-11-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": -2611.874438762665,
+                "sell_volume_usd": 24202589.560069647,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 1007081.0394471319,
+                "day": "2025-11-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": -10839.7235075715,
+                "sell_volume_usd": 1017920.7629547034,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 37965459.66735704,
+                "day": "2025-11-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": 504819.64972472936,
+                "sell_volume_usd": 37460640.01763231,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 983010.0456246735,
+                "day": "2025-11-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": 55030.15155760769,
+                "sell_volume_usd": 927979.8940670658,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 14214907.462265722,
+                "day": "2025-11-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": -145649.90755985677,
+                "sell_volume_usd": 14360557.36982558,
+                "token": "MON"
+            },
+            {
+                "buy_volume_usd": 800944.4159783535,
+                "day": "2025-11-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": 25465.545029656147,
+                "sell_volume_usd": 775478.8709486973,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1117724.414683905,
+                "day": "2025-11-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": -241351.77281621424,
+                "sell_volume_usd": 1359076.1875001192,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1729743.3569388185,
+                "day": "2025-11-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": -157569.43759482307,
+                "sell_volume_usd": 1887312.7945336415,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 948505.8641876567,
+                "day": "2025-11-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": -39072.45421891194,
+                "sell_volume_usd": 987578.3184065686,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 638656.9722312101,
+                "day": "2025-11-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": 55966.41579615197,
+                "sell_volume_usd": 582690.5564350581,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1118579.8535686184,
+                "day": "2025-11-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": -98741.8333521781,
+                "sell_volume_usd": 1217321.6869207965,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1477194.831533858,
+                "day": "2025-11-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": 141793.11767234025,
+                "sell_volume_usd": 1335401.7138615178,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 795167.3769652153,
+                "day": "2025-11-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": 51451.15698181733,
+                "sell_volume_usd": 743716.219983398,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 535136.6581095459,
+                "day": "2025-11-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": 87722.8396682961,
+                "sell_volume_usd": 447413.81844124984,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 867763.7329892477,
+                "day": "2025-11-14 00:00:00.000 UTC",
+                "net_buy_volume_usd": 25666.0820762784,
+                "sell_volume_usd": 842097.6509129693,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 795809.3267728745,
+                "day": "2025-11-13 00:00:00.000 UTC",
+                "net_buy_volume_usd": 55118.48807646206,
+                "sell_volume_usd": 740690.8386964124,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 709561.7218190248,
+                "day": "2025-11-12 00:00:00.000 UTC",
+                "net_buy_volume_usd": -5015.216221845592,
+                "sell_volume_usd": 714576.9380408704,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 772577.8992881868,
+                "day": "2025-11-11 00:00:00.000 UTC",
+                "net_buy_volume_usd": -44406.12056871492,
+                "sell_volume_usd": 816984.0198569017,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 896843.4050314501,
+                "day": "2025-11-10 00:00:00.000 UTC",
+                "net_buy_volume_usd": -54210.461347850855,
+                "sell_volume_usd": 951053.866379301,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1018448.0263991691,
+                "day": "2025-11-09 00:00:00.000 UTC",
+                "net_buy_volume_usd": -21237.447873458732,
+                "sell_volume_usd": 1039685.4742726278,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 764232.4983903508,
+                "day": "2025-11-08 00:00:00.000 UTC",
+                "net_buy_volume_usd": -26223.041122857598,
+                "sell_volume_usd": 790455.5395132084,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1179128.984966012,
+                "day": "2025-11-07 00:00:00.000 UTC",
+                "net_buy_volume_usd": 118284.54171291622,
+                "sell_volume_usd": 1060844.4432530957,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 973434.0115606796,
+                "day": "2025-11-06 00:00:00.000 UTC",
+                "net_buy_volume_usd": -66919.14893265301,
+                "sell_volume_usd": 1040353.1604933327,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1093983.5015071065,
+                "day": "2025-11-05 00:00:00.000 UTC",
+                "net_buy_volume_usd": 77874.83282746281,
+                "sell_volume_usd": 1016108.6686796437,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1994846.7504285849,
+                "day": "2025-11-04 00:00:00.000 UTC",
+                "net_buy_volume_usd": -62194.82545191026,
+                "sell_volume_usd": 2057041.5758804951,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1206905.3228710454,
+                "day": "2025-11-03 00:00:00.000 UTC",
+                "net_buy_volume_usd": 1808.5165864403825,
+                "sell_volume_usd": 1205096.806284605,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 774675.4577266256,
+                "day": "2025-11-02 00:00:00.000 UTC",
+                "net_buy_volume_usd": -20980.81887482945,
+                "sell_volume_usd": 795656.276601455,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 504146.17399643845,
+                "day": "2025-11-01 00:00:00.000 UTC",
+                "net_buy_volume_usd": -11864.19335207669,
+                "sell_volume_usd": 516010.36734851514,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1401519.1791137937,
+                "day": "2025-10-31 00:00:00.000 UTC",
+                "net_buy_volume_usd": -179310.6261761326,
+                "sell_volume_usd": 1580829.8052899262,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 2068848.4281534657,
+                "day": "2025-10-30 00:00:00.000 UTC",
+                "net_buy_volume_usd": -157478.01995506068,
+                "sell_volume_usd": 2226326.4481085264,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1173088.9089034507,
+                "day": "2025-10-29 00:00:00.000 UTC",
+                "net_buy_volume_usd": 48119.164298148826,
+                "sell_volume_usd": 1124969.7446053019,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 820770.3324081246,
+                "day": "2025-10-28 00:00:00.000 UTC",
+                "net_buy_volume_usd": 13540.957124840468,
+                "sell_volume_usd": 807229.3752832841,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1145481.1463200857,
+                "day": "2025-10-27 00:00:00.000 UTC",
+                "net_buy_volume_usd": -4261.881182121811,
+                "sell_volume_usd": 1149743.0275022076,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 1700748.4662418312,
+                "day": "2025-10-26 00:00:00.000 UTC",
+                "net_buy_volume_usd": 103444.80861225259,
+                "sell_volume_usd": 1597303.6576295786,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 784170.8174833718,
+                "day": "2025-10-25 00:00:00.000 UTC",
+                "net_buy_volume_usd": 129994.75005462451,
+                "sell_volume_usd": 654176.0674287473,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 801674.7248527422,
+                "day": "2025-10-24 00:00:00.000 UTC",
+                "net_buy_volume_usd": 271757.9751681299,
+                "sell_volume_usd": 529916.7496846123,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 943938.8291678956,
+                "day": "2025-10-23 00:00:00.000 UTC",
+                "net_buy_volume_usd": 81483.62480484496,
+                "sell_volume_usd": 862455.2043630506,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 702592.3339394277,
+                "day": "2025-10-22 00:00:00.000 UTC",
+                "net_buy_volume_usd": 16864.072209555306,
+                "sell_volume_usd": 685728.2617298724,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 371807.1996579755,
+                "day": "2025-10-21 00:00:00.000 UTC",
+                "net_buy_volume_usd": -36718.57845484902,
+                "sell_volume_usd": 408525.77811282454,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 296329.442483123,
+                "day": "2025-10-20 00:00:00.000 UTC",
+                "net_buy_volume_usd": 1408.2989548769547,
+                "sell_volume_usd": 294921.14352824603,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 167616.74818953898,
+                "day": "2025-10-19 00:00:00.000 UTC",
+                "net_buy_volume_usd": 19474.278213828104,
+                "sell_volume_usd": 148142.46997571088,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 126554.51181937635,
+                "day": "2025-10-18 00:00:00.000 UTC",
+                "net_buy_volume_usd": 7013.622424380257,
+                "sell_volume_usd": 119540.88939499609,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 225770.21554130595,
+                "day": "2025-10-17 00:00:00.000 UTC",
+                "net_buy_volume_usd": -34440.27392852612,
+                "sell_volume_usd": 260210.48946983207,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 168428.95837906527,
+                "day": "2025-10-16 00:00:00.000 UTC",
+                "net_buy_volume_usd": 12631.635554819455,
+                "sell_volume_usd": 155797.3228242458,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 135433.3514433713,
+                "day": "2025-10-15 00:00:00.000 UTC",
+                "net_buy_volume_usd": -8096.678507011704,
+                "sell_volume_usd": 143530.029950383,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 153786.15929742734,
+                "day": "2025-10-14 00:00:00.000 UTC",
+                "net_buy_volume_usd": -18015.06185266815,
+                "sell_volume_usd": 171801.2211500955,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 436091.1453245917,
+                "day": "2025-10-13 00:00:00.000 UTC",
+                "net_buy_volume_usd": 13103.634890829504,
+                "sell_volume_usd": 422987.5104337622,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 224727.473390127,
+                "day": "2025-10-12 00:00:00.000 UTC",
+                "net_buy_volume_usd": -28721.353310567734,
+                "sell_volume_usd": 253448.82670069474,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 431555.12532308453,
+                "day": "2025-10-11 00:00:00.000 UTC",
+                "net_buy_volume_usd": 10010.865616978554,
+                "sell_volume_usd": 421544.259706106,
+                "token": "HYPE"
+            },
+            {
+                "buy_volume_usd": 214807.2766073722,
+                "day": "2025-10-10 00:00:00.000 UTC",
+                "net_buy_volume_usd": -7032.186401793762,
+                "sell_volume_usd": 221839.46300916595,
+                "token": "HYPE"
+            }
+        ],
+        "metadata": {
+            "column_names": [
+                "day",
+                "token",
+                "buy_volume_usd",
+                "sell_volume_usd",
+                "net_buy_volume_usd"
+            ],
+            "column_types": [
+                "timestamp(3) with time zone",
+                "varchar(4)",
+                "double",
+                "double",
+                "double"
+            ],
+            "row_count": 306,
+            "result_set_bytes": 28525,
+            "total_row_count": 306,
+            "total_result_set_bytes": 10850,
+            "datapoint_count": 1530,
+            "pending_time_millis": 510,
+            "execution_time_millis": 24587
+        }
+    }
+}

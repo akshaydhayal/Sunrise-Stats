@@ -56,7 +56,7 @@ export default function Dashboard() {
     return (
       <div>
         <div className="header-row">
-          <h2>Sunrise Overview</h2>
+          <h2>Sunrise Assets Overview</h2>
           <LastUpdated />
         </div>
         <div className="glass-panel" style={{ textAlign: 'center', padding: '60px 20px' }}>
@@ -71,7 +71,7 @@ export default function Dashboard() {
     <div>
       <div className="header-row">
         <div>
-          <h2>Sunrise Overview</h2>
+          <h2>Sunrise Assets Overview</h2>
           <p style={{ color: 'var(--text-muted)', marginTop: '4px' }}>Canonical assets bridged to Solana</p>
         </div>
         <LastUpdated />

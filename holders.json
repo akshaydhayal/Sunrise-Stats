@@ -1,0 +1,1913 @@
+{
+    "execution_id": "01KJCY1P9819F6BA81DVR30PRJ",
+    "query_id": 6733727,
+    "is_execution_finished": true,
+    "state": "QUERY_STATE_COMPLETED",
+    "submitted_at": "2026-02-26T12:16:15.656655Z",
+    "expires_at": "2026-05-27T12:16:36.925201Z",
+    "execution_started_at": "2026-02-26T12:16:16.409481Z",
+    "execution_ended_at": "2026-02-26T12:16:36.92519Z",
+    "result": {
+        "rows": [
+            {
+                "day": "2026-02-26",
+                "holder_growth": 8,
+                "token": "HYPE",
+                "total_holders": 6094
+            },
+            {
+                "day": "2026-02-26",
+                "holder_growth": 3,
+                "token": "INX",
+                "total_holders": 328
+            },
+            {
+                "day": "2026-02-26",
+                "holder_growth": 3,
+                "token": "LIT",
+                "total_holders": 326
+            },
+            {
+                "day": "2026-02-26",
+                "holder_growth": 4,
+                "token": "MON",
+                "total_holders": 8170
+            },
+            {
+                "day": "2026-02-25",
+                "holder_growth": 27,
+                "token": "HYPE",
+                "total_holders": 6086
+            },
+            {
+                "day": "2026-02-25",
+                "holder_growth": -15,
+                "token": "INX",
+                "total_holders": 325
+            },
+            {
+                "day": "2026-02-25",
+                "holder_growth": 2,
+                "token": "LIT",
+                "total_holders": 323
+            },
+            {
+                "day": "2026-02-25",
+                "holder_growth": -12,
+                "token": "MON",
+                "total_holders": 8166
+            },
+            {
+                "day": "2026-02-24",
+                "holder_growth": 21,
+                "token": "HYPE",
+                "total_holders": 6059
+            },
+            {
+                "day": "2026-02-24",
+                "holder_growth": 6,
+                "token": "INX",
+                "total_holders": 340
+            },
+            {
+                "day": "2026-02-24",
+                "holder_growth": 9,
+                "token": "LIT",
+                "total_holders": 321
+            },
+            {
+                "day": "2026-02-24",
+                "holder_growth": -9,
+                "token": "MON",
+                "total_holders": 8178
+            },
+            {
+                "day": "2026-02-23",
+                "holder_growth": 50,
+                "token": "HYPE",
+                "total_holders": 6038
+            },
+            {
+                "day": "2026-02-23",
+                "holder_growth": -5,
+                "token": "INX",
+                "total_holders": 334
+            },
+            {
+                "day": "2026-02-23",
+                "holder_growth": -1,
+                "token": "LIT",
+                "total_holders": 312
+            },
+            {
+                "day": "2026-02-23",
+                "holder_growth": -6,
+                "token": "MON",
+                "total_holders": 8187
+            },
+            {
+                "day": "2026-02-22",
+                "holder_growth": -5,
+                "token": "HYPE",
+                "total_holders": 5988
+            },
+            {
+                "day": "2026-02-22",
+                "holder_growth": -1,
+                "token": "INX",
+                "total_holders": 339
+            },
+            {
+                "day": "2026-02-22",
+                "holder_growth": 0,
+                "token": "LIT",
+                "total_holders": 313
+            },
+            {
+                "day": "2026-02-22",
+                "holder_growth": -9,
+                "token": "MON",
+                "total_holders": 8193
+            },
+            {
+                "day": "2026-02-21",
+                "holder_growth": -13,
+                "token": "HYPE",
+                "total_holders": 5993
+            },
+            {
+                "day": "2026-02-21",
+                "holder_growth": 5,
+                "token": "INX",
+                "total_holders": 340
+            },
+            {
+                "day": "2026-02-21",
+                "holder_growth": 1,
+                "token": "LIT",
+                "total_holders": 313
+            },
+            {
+                "day": "2026-02-21",
+                "holder_growth": -2,
+                "token": "MON",
+                "total_holders": 8202
+            },
+            {
+                "day": "2026-02-20",
+                "holder_growth": 1,
+                "token": "HYPE",
+                "total_holders": 6006
+            },
+            {
+                "day": "2026-02-20",
+                "holder_growth": 5,
+                "token": "INX",
+                "total_holders": 335
+            },
+            {
+                "day": "2026-02-20",
+                "holder_growth": -3,
+                "token": "LIT",
+                "total_holders": 312
+            },
+            {
+                "day": "2026-02-20",
+                "holder_growth": 1,
+                "token": "MON",
+                "total_holders": 8204
+            },
+            {
+                "day": "2026-02-19",
+                "holder_growth": 98,
+                "token": "HYPE",
+                "total_holders": 6005
+            },
+            {
+                "day": "2026-02-19",
+                "holder_growth": 2,
+                "token": "INX",
+                "total_holders": 330
+            },
+            {
+                "day": "2026-02-19",
+                "holder_growth": 0,
+                "token": "LIT",
+                "total_holders": 315
+            },
+            {
+                "day": "2026-02-19",
+                "holder_growth": -15,
+                "token": "MON",
+                "total_holders": 8203
+            },
+            {
+                "day": "2026-02-18",
+                "holder_growth": 34,
+                "token": "HYPE",
+                "total_holders": 5907
+            },
+            {
+                "day": "2026-02-18",
+                "holder_growth": 0,
+                "token": "INX",
+                "total_holders": 328
+            },
+            {
+                "day": "2026-02-18",
+                "holder_growth": -5,
+                "token": "LIT",
+                "total_holders": 315
+            },
+            {
+                "day": "2026-02-18",
+                "holder_growth": -29,
+                "token": "MON",
+                "total_holders": 8218
+            },
+            {
+                "day": "2026-02-17",
+                "holder_growth": -17,
+                "token": "HYPE",
+                "total_holders": 5873
+            },
+            {
+                "day": "2026-02-17",
+                "holder_growth": -4,
+                "token": "INX",
+                "total_holders": 328
+            },
+            {
+                "day": "2026-02-17",
+                "holder_growth": -1,
+                "token": "LIT",
+                "total_holders": 320
+            },
+            {
+                "day": "2026-02-17",
+                "holder_growth": -11,
+                "token": "MON",
+                "total_holders": 8247
+            },
+            {
+                "day": "2026-02-16",
+                "holder_growth": -12,
+                "token": "HYPE",
+                "total_holders": 5890
+            },
+            {
+                "day": "2026-02-16",
+                "holder_growth": -5,
+                "token": "INX",
+                "total_holders": 332
+            },
+            {
+                "day": "2026-02-16",
+                "holder_growth": 6,
+                "token": "LIT",
+                "total_holders": 321
+            },
+            {
+                "day": "2026-02-16",
+                "holder_growth": -29,
+                "token": "MON",
+                "total_holders": 8258
+            },
+            {
+                "day": "2026-02-15",
+                "holder_growth": -42,
+                "token": "HYPE",
+                "total_holders": 5902
+            },
+            {
+                "day": "2026-02-15",
+                "holder_growth": -2,
+                "token": "INX",
+                "total_holders": 337
+            },
+            {
+                "day": "2026-02-15",
+                "holder_growth": 7,
+                "token": "LIT",
+                "total_holders": 315
+            },
+            {
+                "day": "2026-02-15",
+                "holder_growth": -7,
+                "token": "MON",
+                "total_holders": 8287
+            },
+            {
+                "day": "2026-02-14",
+                "holder_growth": 20,
+                "token": "HYPE",
+                "total_holders": 5944
+            },
+            {
+                "day": "2026-02-14",
+                "holder_growth": 2,
+                "token": "INX",
+                "total_holders": 339
+            },
+            {
+                "day": "2026-02-14",
+                "holder_growth": 2,
+                "token": "LIT",
+                "total_holders": 308
+            },
+            {
+                "day": "2026-02-14",
+                "holder_growth": 6,
+                "token": "MON",
+                "total_holders": 8294
+            },
+            {
+                "day": "2026-02-13",
+                "holder_growth": 1,
+                "token": "HYPE",
+                "total_holders": 5924
+            },
+            {
+                "day": "2026-02-13",
+                "holder_growth": 5,
+                "token": "INX",
+                "total_holders": 337
+            },
+            {
+                "day": "2026-02-13",
+                "holder_growth": 4,
+                "token": "LIT",
+                "total_holders": 306
+            },
+            {
+                "day": "2026-02-13",
+                "holder_growth": 5,
+                "token": "MON",
+                "total_holders": 8288
+            },
+            {
+                "day": "2026-02-12",
+                "holder_growth": 72,
+                "token": "HYPE",
+                "total_holders": 5923
+            },
+            {
+                "day": "2026-02-12",
+                "holder_growth": 8,
+                "token": "INX",
+                "total_holders": 332
+            },
+            {
+                "day": "2026-02-12",
+                "holder_growth": -2,
+                "token": "LIT",
+                "total_holders": 302
+            },
+            {
+                "day": "2026-02-12",
+                "holder_growth": -12,
+                "token": "MON",
+                "total_holders": 8283
+            },
+            {
+                "day": "2026-02-11",
+                "holder_growth": 47,
+                "token": "HYPE",
+                "total_holders": 5851
+            },
+            {
+                "day": "2026-02-11",
+                "holder_growth": 4,
+                "token": "INX",
+                "total_holders": 324
+            },
+            {
+                "day": "2026-02-11",
+                "holder_growth": -3,
+                "token": "LIT",
+                "total_holders": 304
+            },
+            {
+                "day": "2026-02-11",
+                "holder_growth": 6,
+                "token": "MON",
+                "total_holders": 8295
+            },
+            {
+                "day": "2026-02-10",
+                "holder_growth": -26,
+                "token": "HYPE",
+                "total_holders": 5804
+            },
+            {
+                "day": "2026-02-10",
+                "holder_growth": 11,
+                "token": "INX",
+                "total_holders": 320
+            },
+            {
+                "day": "2026-02-10",
+                "holder_growth": 2,
+                "token": "LIT",
+                "total_holders": 307
+            },
+            {
+                "day": "2026-02-10",
+                "holder_growth": -7,
+                "token": "MON",
+                "total_holders": 8289
+            },
+            {
+                "day": "2026-02-09",
+                "holder_growth": 47,
+                "token": "HYPE",
+                "total_holders": 5830
+            },
+            {
+                "day": "2026-02-09",
+                "holder_growth": -1,
+                "token": "INX",
+                "total_holders": 309
+            },
+            {
+                "day": "2026-02-09",
+                "holder_growth": -1,
+                "token": "LIT",
+                "total_holders": 305
+            },
+            {
+                "day": "2026-02-09",
+                "holder_growth": -1,
+                "token": "MON",
+                "total_holders": 8296
+            },
+            {
+                "day": "2026-02-08",
+                "holder_growth": 48,
+                "token": "HYPE",
+                "total_holders": 5783
+            },
+            {
+                "day": "2026-02-08",
+                "holder_growth": -3,
+                "token": "INX",
+                "total_holders": 310
+            },
+            {
+                "day": "2026-02-08",
+                "holder_growth": 3,
+                "token": "LIT",
+                "total_holders": 306
+            },
+            {
+                "day": "2026-02-08",
+                "holder_growth": -1,
+                "token": "MON",
+                "total_holders": 8297
+            },
+            {
+                "day": "2026-02-07",
+                "holder_growth": 64,
+                "token": "HYPE",
+                "total_holders": 5735
+            },
+            {
+                "day": "2026-02-07",
+                "holder_growth": 10,
+                "token": "INX",
+                "total_holders": 313
+            },
+            {
+                "day": "2026-02-07",
+                "holder_growth": 1,
+                "token": "LIT",
+                "total_holders": 303
+            },
+            {
+                "day": "2026-02-07",
+                "holder_growth": -10,
+                "token": "MON",
+                "total_holders": 8298
+            },
+            {
+                "day": "2026-02-06",
+                "holder_growth": 152,
+                "token": "HYPE",
+                "total_holders": 5671
+            },
+            {
+                "day": "2026-02-06",
+                "holder_growth": 9,
+                "token": "INX",
+                "total_holders": 303
+            },
+            {
+                "day": "2026-02-06",
+                "holder_growth": -12,
+                "token": "LIT",
+                "total_holders": 302
+            },
+            {
+                "day": "2026-02-06",
+                "holder_growth": -4,
+                "token": "MON",
+                "total_holders": 8308
+            },
+            {
+                "day": "2026-02-05",
+                "holder_growth": 146,
+                "token": "HYPE",
+                "total_holders": 5519
+            },
+            {
+                "day": "2026-02-05",
+                "holder_growth": 2,
+                "token": "INX",
+                "total_holders": 294
+            },
+            {
+                "day": "2026-02-05",
+                "holder_growth": -11,
+                "token": "LIT",
+                "total_holders": 314
+            },
+            {
+                "day": "2026-02-05",
+                "holder_growth": -33,
+                "token": "MON",
+                "total_holders": 8312
+            },
+            {
+                "day": "2026-02-04",
+                "holder_growth": 205,
+                "token": "HYPE",
+                "total_holders": 5373
+            },
+            {
+                "day": "2026-02-04",
+                "holder_growth": -4,
+                "token": "INX",
+                "total_holders": 292
+            },
+            {
+                "day": "2026-02-04",
+                "holder_growth": 143,
+                "token": "LIT",
+                "total_holders": 325
+            },
+            {
+                "day": "2026-02-04",
+                "holder_growth": -9,
+                "token": "MON",
+                "total_holders": 8345
+            },
+            {
+                "day": "2026-02-03",
+                "holder_growth": 605,
+                "token": "HYPE",
+                "total_holders": 5168
+            },
+            {
+                "day": "2026-02-03",
+                "holder_growth": 27,
+                "token": "INX",
+                "total_holders": 296
+            },
+            {
+                "day": "2026-02-03",
+                "holder_growth": 16,
+                "token": "LIT",
+                "total_holders": 182
+            },
+            {
+                "day": "2026-02-03",
+                "holder_growth": -2,
+                "token": "MON",
+                "total_holders": 8354
+            },
+            {
+                "day": "2026-02-02",
+                "holder_growth": 228,
+                "token": "HYPE",
+                "total_holders": 4563
+            },
+            {
+                "day": "2026-02-02",
+                "holder_growth": 18,
+                "token": "INX",
+                "total_holders": 269
+            },
+            {
+                "day": "2026-02-02",
+                "holder_growth": -1,
+                "token": "LIT",
+                "total_holders": 166
+            },
+            {
+                "day": "2026-02-02",
+                "holder_growth": -13,
+                "token": "MON",
+                "total_holders": 8356
+            },
+            {
+                "day": "2026-02-01",
+                "holder_growth": 126,
+                "token": "HYPE",
+                "total_holders": 4335
+            },
+            {
+                "day": "2026-02-01",
+                "holder_growth": 9,
+                "token": "INX",
+                "total_holders": 251
+            },
+            {
+                "day": "2026-02-01",
+                "holder_growth": -4,
+                "token": "LIT",
+                "total_holders": 167
+            },
+            {
+                "day": "2026-02-01",
+                "holder_growth": -26,
+                "token": "MON",
+                "total_holders": 8369
+            },
+            {
+                "day": "2026-01-31",
+                "holder_growth": 131,
+                "token": "HYPE",
+                "total_holders": 4209
+            },
+            {
+                "day": "2026-01-31",
+                "holder_growth": 63,
+                "token": "INX",
+                "total_holders": 242
+            },
+            {
+                "day": "2026-01-31",
+                "holder_growth": 2,
+                "token": "LIT",
+                "total_holders": 171
+            },
+            {
+                "day": "2026-01-31",
+                "holder_growth": -19,
+                "token": "MON",
+                "total_holders": 8395
+            },
+            {
+                "day": "2026-01-30",
+                "holder_growth": 99,
+                "token": "HYPE",
+                "total_holders": 4078
+            },
+            {
+                "day": "2026-01-30",
+                "holder_growth": 174,
+                "token": "INX",
+                "total_holders": 179
+            },
+            {
+                "day": "2026-01-30",
+                "holder_growth": 2,
+                "token": "LIT",
+                "total_holders": 169
+            },
+            {
+                "day": "2026-01-30",
+                "holder_growth": -69,
+                "token": "MON",
+                "total_holders": 8414
+            },
+            {
+                "day": "2026-01-29",
+                "holder_growth": 44,
+                "token": "HYPE",
+                "total_holders": 3979
+            },
+            {
+                "day": "2026-01-29",
+                "holder_growth": null,
+                "token": "INX",
+                "total_holders": 5
+            },
+            {
+                "day": "2026-01-29",
+                "holder_growth": 3,
+                "token": "LIT",
+                "total_holders": 167
+            },
+            {
+                "day": "2026-01-29",
+                "holder_growth": -43,
+                "token": "MON",
+                "total_holders": 8483
+            },
+            {
+                "day": "2026-01-28",
+                "holder_growth": 255,
+                "token": "HYPE",
+                "total_holders": 3935
+            },
+            {
+                "day": "2026-01-28",
+                "holder_growth": 2,
+                "token": "LIT",
+                "total_holders": 164
+            },
+            {
+                "day": "2026-01-28",
+                "holder_growth": -16,
+                "token": "MON",
+                "total_holders": 8526
+            },
+            {
+                "day": "2026-01-27",
+                "holder_growth": 260,
+                "token": "HYPE",
+                "total_holders": 3680
+            },
+            {
+                "day": "2026-01-27",
+                "holder_growth": 6,
+                "token": "LIT",
+                "total_holders": 162
+            },
+            {
+                "day": "2026-01-27",
+                "holder_growth": 5,
+                "token": "MON",
+                "total_holders": 8542
+            },
+            {
+                "day": "2026-01-26",
+                "holder_growth": 42,
+                "token": "HYPE",
+                "total_holders": 3420
+            },
+            {
+                "day": "2026-01-26",
+                "holder_growth": 0,
+                "token": "LIT",
+                "total_holders": 156
+            },
+            {
+                "day": "2026-01-26",
+                "holder_growth": -14,
+                "token": "MON",
+                "total_holders": 8537
+            },
+            {
+                "day": "2026-01-25",
+                "holder_growth": -7,
+                "token": "HYPE",
+                "total_holders": 3378
+            },
+            {
+                "day": "2026-01-25",
+                "holder_growth": -1,
+                "token": "LIT",
+                "total_holders": 156
+            },
+            {
+                "day": "2026-01-25",
+                "holder_growth": -39,
+                "token": "MON",
+                "total_holders": 8551
+            },
+            {
+                "day": "2026-01-24",
+                "holder_growth": 72,
+                "token": "HYPE",
+                "total_holders": 3385
+            },
+            {
+                "day": "2026-01-24",
+                "holder_growth": -2,
+                "token": "LIT",
+                "total_holders": 157
+            },
+            {
+                "day": "2026-01-24",
+                "holder_growth": -12,
+                "token": "MON",
+                "total_holders": 8590
+            },
+            {
+                "day": "2026-01-23",
+                "holder_growth": 28,
+                "token": "HYPE",
+                "total_holders": 3313
+            },
+            {
+                "day": "2026-01-23",
+                "holder_growth": 0,
+                "token": "LIT",
+                "total_holders": 159
+            },
+            {
+                "day": "2026-01-23",
+                "holder_growth": 19,
+                "token": "MON",
+                "total_holders": 8602
+            },
+            {
+                "day": "2026-01-22",
+                "holder_growth": 29,
+                "token": "HYPE",
+                "total_holders": 3285
+            },
+            {
+                "day": "2026-01-22",
+                "holder_growth": 9,
+                "token": "LIT",
+                "total_holders": 159
+            },
+            {
+                "day": "2026-01-22",
+                "holder_growth": -15,
+                "token": "MON",
+                "total_holders": 8583
+            },
+            {
+                "day": "2026-01-21",
+                "holder_growth": 1,
+                "token": "HYPE",
+                "total_holders": 3256
+            },
+            {
+                "day": "2026-01-21",
+                "holder_growth": 3,
+                "token": "LIT",
+                "total_holders": 150
+            },
+            {
+                "day": "2026-01-21",
+                "holder_growth": -3,
+                "token": "MON",
+                "total_holders": 8598
+            },
+            {
+                "day": "2026-01-20",
+                "holder_growth": 25,
+                "token": "HYPE",
+                "total_holders": 3255
+            },
+            {
+                "day": "2026-01-20",
+                "holder_growth": 13,
+                "token": "LIT",
+                "total_holders": 147
+            },
+            {
+                "day": "2026-01-20",
+                "holder_growth": -21,
+                "token": "MON",
+                "total_holders": 8601
+            },
+            {
+                "day": "2026-01-19",
+                "holder_growth": 14,
+                "token": "HYPE",
+                "total_holders": 3230
+            },
+            {
+                "day": "2026-01-19",
+                "holder_growth": 17,
+                "token": "LIT",
+                "total_holders": 134
+            },
+            {
+                "day": "2026-01-19",
+                "holder_growth": -17,
+                "token": "MON",
+                "total_holders": 8622
+            },
+            {
+                "day": "2026-01-18",
+                "holder_growth": 9,
+                "token": "HYPE",
+                "total_holders": 3216
+            },
+            {
+                "day": "2026-01-18",
+                "holder_growth": 0,
+                "token": "LIT",
+                "total_holders": 117
+            },
+            {
+                "day": "2026-01-18",
+                "holder_growth": -30,
+                "token": "MON",
+                "total_holders": 8639
+            },
+            {
+                "day": "2026-01-17",
+                "holder_growth": -2,
+                "token": "HYPE",
+                "total_holders": 3207
+            },
+            {
+                "day": "2026-01-17",
+                "holder_growth": 17,
+                "token": "LIT",
+                "total_holders": 117
+            },
+            {
+                "day": "2026-01-17",
+                "holder_growth": 9,
+                "token": "MON",
+                "total_holders": 8669
+            },
+            {
+                "day": "2026-01-16",
+                "holder_growth": -3,
+                "token": "HYPE",
+                "total_holders": 3209
+            },
+            {
+                "day": "2026-01-16",
+                "holder_growth": 39,
+                "token": "LIT",
+                "total_holders": 100
+            },
+            {
+                "day": "2026-01-16",
+                "holder_growth": -32,
+                "token": "MON",
+                "total_holders": 8660
+            },
+            {
+                "day": "2026-01-15",
+                "holder_growth": 29,
+                "token": "HYPE",
+                "total_holders": 3212
+            },
+            {
+                "day": "2026-01-15",
+                "holder_growth": null,
+                "token": "LIT",
+                "total_holders": 61
+            },
+            {
+                "day": "2026-01-15",
+                "holder_growth": -21,
+                "token": "MON",
+                "total_holders": 8692
+            },
+            {
+                "day": "2026-01-14",
+                "holder_growth": 17,
+                "token": "HYPE",
+                "total_holders": 3183
+            },
+            {
+                "day": "2026-01-14",
+                "holder_growth": -27,
+                "token": "MON",
+                "total_holders": 8713
+            },
+            {
+                "day": "2026-01-13",
+                "holder_growth": -18,
+                "token": "HYPE",
+                "total_holders": 3166
+            },
+            {
+                "day": "2026-01-13",
+                "holder_growth": -28,
+                "token": "MON",
+                "total_holders": 8740
+            },
+            {
+                "day": "2026-01-12",
+                "holder_growth": 12,
+                "token": "HYPE",
+                "total_holders": 3184
+            },
+            {
+                "day": "2026-01-12",
+                "holder_growth": 12,
+                "token": "MON",
+                "total_holders": 8768
+            },
+            {
+                "day": "2026-01-11",
+                "holder_growth": 11,
+                "token": "HYPE",
+                "total_holders": 3172
+            },
+            {
+                "day": "2026-01-11",
+                "holder_growth": -12,
+                "token": "MON",
+                "total_holders": 8756
+            },
+            {
+                "day": "2026-01-10",
+                "holder_growth": 46,
+                "token": "HYPE",
+                "total_holders": 3161
+            },
+            {
+                "day": "2026-01-10",
+                "holder_growth": -21,
+                "token": "MON",
+                "total_holders": 8768
+            },
+            {
+                "day": "2026-01-09",
+                "holder_growth": 5,
+                "token": "HYPE",
+                "total_holders": 3115
+            },
+            {
+                "day": "2026-01-09",
+                "holder_growth": -1,
+                "token": "MON",
+                "total_holders": 8789
+            },
+            {
+                "day": "2026-01-08",
+                "holder_growth": 2,
+                "token": "HYPE",
+                "total_holders": 3110
+            },
+            {
+                "day": "2026-01-08",
+                "holder_growth": 13,
+                "token": "MON",
+                "total_holders": 8790
+            },
+            {
+                "day": "2026-01-07",
+                "holder_growth": 28,
+                "token": "HYPE",
+                "total_holders": 3108
+            },
+            {
+                "day": "2026-01-07",
+                "holder_growth": 33,
+                "token": "MON",
+                "total_holders": 8777
+            },
+            {
+                "day": "2026-01-06",
+                "holder_growth": 44,
+                "token": "HYPE",
+                "total_holders": 3080
+            },
+            {
+                "day": "2026-01-06",
+                "holder_growth": 2,
+                "token": "MON",
+                "total_holders": 8744
+            },
+            {
+                "day": "2026-01-05",
+                "holder_growth": 21,
+                "token": "HYPE",
+                "total_holders": 3036
+            },
+            {
+                "day": "2026-01-05",
+                "holder_growth": -52,
+                "token": "MON",
+                "total_holders": 8742
+            },
+            {
+                "day": "2026-01-04",
+                "holder_growth": 46,
+                "token": "HYPE",
+                "total_holders": 3015
+            },
+            {
+                "day": "2026-01-04",
+                "holder_growth": -3,
+                "token": "MON",
+                "total_holders": 8794
+            },
+            {
+                "day": "2026-01-03",
+                "holder_growth": 2,
+                "token": "HYPE",
+                "total_holders": 2969
+            },
+            {
+                "day": "2026-01-03",
+                "holder_growth": 59,
+                "token": "MON",
+                "total_holders": 8797
+            },
+            {
+                "day": "2026-01-02",
+                "holder_growth": 32,
+                "token": "HYPE",
+                "total_holders": 2967
+            },
+            {
+                "day": "2026-01-02",
+                "holder_growth": 109,
+                "token": "MON",
+                "total_holders": 8738
+            },
+            {
+                "day": "2026-01-01",
+                "holder_growth": 1,
+                "token": "HYPE",
+                "total_holders": 2935
+            },
+            {
+                "day": "2026-01-01",
+                "holder_growth": -20,
+                "token": "MON",
+                "total_holders": 8629
+            },
+            {
+                "day": "2025-12-31",
+                "holder_growth": -15,
+                "token": "HYPE",
+                "total_holders": 2934
+            },
+            {
+                "day": "2025-12-31",
+                "holder_growth": -4,
+                "token": "MON",
+                "total_holders": 8649
+            },
+            {
+                "day": "2025-12-30",
+                "holder_growth": 8,
+                "token": "HYPE",
+                "total_holders": 2949
+            },
+            {
+                "day": "2025-12-30",
+                "holder_growth": -3,
+                "token": "MON",
+                "total_holders": 8653
+            },
+            {
+                "day": "2025-12-29",
+                "holder_growth": 17,
+                "token": "HYPE",
+                "total_holders": 2941
+            },
+            {
+                "day": "2025-12-29",
+                "holder_growth": -17,
+                "token": "MON",
+                "total_holders": 8656
+            },
+            {
+                "day": "2025-12-28",
+                "holder_growth": -17,
+                "token": "HYPE",
+                "total_holders": 2924
+            },
+            {
+                "day": "2025-12-28",
+                "holder_growth": -20,
+                "token": "MON",
+                "total_holders": 8673
+            },
+            {
+                "day": "2025-12-27",
+                "holder_growth": 33,
+                "token": "HYPE",
+                "total_holders": 2941
+            },
+            {
+                "day": "2025-12-27",
+                "holder_growth": -5,
+                "token": "MON",
+                "total_holders": 8693
+            },
+            {
+                "day": "2025-12-26",
+                "holder_growth": 13,
+                "token": "HYPE",
+                "total_holders": 2908
+            },
+            {
+                "day": "2025-12-26",
+                "holder_growth": 23,
+                "token": "MON",
+                "total_holders": 8698
+            },
+            {
+                "day": "2025-12-25",
+                "holder_growth": -23,
+                "token": "HYPE",
+                "total_holders": 2895
+            },
+            {
+                "day": "2025-12-25",
+                "holder_growth": 90,
+                "token": "MON",
+                "total_holders": 8675
+            },
+            {
+                "day": "2025-12-24",
+                "holder_growth": 1,
+                "token": "HYPE",
+                "total_holders": 2918
+            },
+            {
+                "day": "2025-12-24",
+                "holder_growth": 69,
+                "token": "MON",
+                "total_holders": 8585
+            },
+            {
+                "day": "2025-12-23",
+                "holder_growth": 70,
+                "token": "HYPE",
+                "total_holders": 2917
+            },
+            {
+                "day": "2025-12-23",
+                "holder_growth": -7,
+                "token": "MON",
+                "total_holders": 8516
+            },
+            {
+                "day": "2025-12-22",
+                "holder_growth": -22,
+                "token": "HYPE",
+                "total_holders": 2847
+            },
+            {
+                "day": "2025-12-22",
+                "holder_growth": 12,
+                "token": "MON",
+                "total_holders": 8523
+            },
+            {
+                "day": "2025-12-21",
+                "holder_growth": 31,
+                "token": "HYPE",
+                "total_holders": 2869
+            },
+            {
+                "day": "2025-12-21",
+                "holder_growth": -4,
+                "token": "MON",
+                "total_holders": 8511
+            },
+            {
+                "day": "2025-12-20",
+                "holder_growth": 48,
+                "token": "HYPE",
+                "total_holders": 2838
+            },
+            {
+                "day": "2025-12-20",
+                "holder_growth": -12,
+                "token": "MON",
+                "total_holders": 8515
+            },
+            {
+                "day": "2025-12-19",
+                "holder_growth": 1,
+                "token": "HYPE",
+                "total_holders": 2790
+            },
+            {
+                "day": "2025-12-19",
+                "holder_growth": 7,
+                "token": "MON",
+                "total_holders": 8527
+            },
+            {
+                "day": "2025-12-18",
+                "holder_growth": -25,
+                "token": "HYPE",
+                "total_holders": 2789
+            },
+            {
+                "day": "2025-12-18",
+                "holder_growth": -32,
+                "token": "MON",
+                "total_holders": 8520
+            },
+            {
+                "day": "2025-12-17",
+                "holder_growth": 75,
+                "token": "HYPE",
+                "total_holders": 2814
+            },
+            {
+                "day": "2025-12-17",
+                "holder_growth": -27,
+                "token": "MON",
+                "total_holders": 8552
+            },
+            {
+                "day": "2025-12-16",
+                "holder_growth": -36,
+                "token": "HYPE",
+                "total_holders": 2739
+            },
+            {
+                "day": "2025-12-16",
+                "holder_growth": -49,
+                "token": "MON",
+                "total_holders": 8579
+            },
+            {
+                "day": "2025-12-15",
+                "holder_growth": 5,
+                "token": "HYPE",
+                "total_holders": 2775
+            },
+            {
+                "day": "2025-12-15",
+                "holder_growth": -31,
+                "token": "MON",
+                "total_holders": 8628
+            },
+            {
+                "day": "2025-12-14",
+                "holder_growth": 18,
+                "token": "HYPE",
+                "total_holders": 2770
+            },
+            {
+                "day": "2025-12-14",
+                "holder_growth": -33,
+                "token": "MON",
+                "total_holders": 8659
+            },
+            {
+                "day": "2025-12-13",
+                "holder_growth": 48,
+                "token": "HYPE",
+                "total_holders": 2752
+            },
+            {
+                "day": "2025-12-13",
+                "holder_growth": -11,
+                "token": "MON",
+                "total_holders": 8692
+            },
+            {
+                "day": "2025-12-12",
+                "holder_growth": -6,
+                "token": "HYPE",
+                "total_holders": 2704
+            },
+            {
+                "day": "2025-12-12",
+                "holder_growth": -2,
+                "token": "MON",
+                "total_holders": 8703
+            },
+            {
+                "day": "2025-12-11",
+                "holder_growth": 83,
+                "token": "HYPE",
+                "total_holders": 2710
+            },
+            {
+                "day": "2025-12-11",
+                "holder_growth": -70,
+                "token": "MON",
+                "total_holders": 8705
+            },
+            {
+                "day": "2025-12-10",
+                "holder_growth": -7,
+                "token": "HYPE",
+                "total_holders": 2627
+            },
+            {
+                "day": "2025-12-10",
+                "holder_growth": -60,
+                "token": "MON",
+                "total_holders": 8775
+            },
+            {
+                "day": "2025-12-09",
+                "holder_growth": 44,
+                "token": "HYPE",
+                "total_holders": 2634
+            },
+            {
+                "day": "2025-12-09",
+                "holder_growth": -92,
+                "token": "MON",
+                "total_holders": 8835
+            },
+            {
+                "day": "2025-12-08",
+                "holder_growth": 72,
+                "token": "HYPE",
+                "total_holders": 2590
+            },
+            {
+                "day": "2025-12-08",
+                "holder_growth": 64,
+                "token": "MON",
+                "total_holders": 8927
+            },
+            {
+                "day": "2025-12-07",
+                "holder_growth": 31,
+                "token": "HYPE",
+                "total_holders": 2518
+            },
+            {
+                "day": "2025-12-07",
+                "holder_growth": -59,
+                "token": "MON",
+                "total_holders": 8863
+            },
+            {
+                "day": "2025-12-06",
+                "holder_growth": 71,
+                "token": "HYPE",
+                "total_holders": 2487
+            },
+            {
+                "day": "2025-12-06",
+                "holder_growth": -26,
+                "token": "MON",
+                "total_holders": 8922
+            },
+            {
+                "day": "2025-12-05",
+                "holder_growth": 25,
+                "token": "HYPE",
+                "total_holders": 2416
+            },
+            {
+                "day": "2025-12-05",
+                "holder_growth": -2,
+                "token": "MON",
+                "total_holders": 8948
+            },
+            {
+                "day": "2025-12-04",
+                "holder_growth": -33,
+                "token": "HYPE",
+                "total_holders": 2391
+            },
+            {
+                "day": "2025-12-04",
+                "holder_growth": -69,
+                "token": "MON",
+                "total_holders": 8950
+            },
+            {
+                "day": "2025-12-03",
+                "holder_growth": 33,
+                "token": "HYPE",
+                "total_holders": 2424
+            },
+            {
+                "day": "2025-12-03",
+                "holder_growth": -95,
+                "token": "MON",
+                "total_holders": 9019
+            },
+            {
+                "day": "2025-12-02",
+                "holder_growth": 24,
+                "token": "HYPE",
+                "total_holders": 2391
+            },
+            {
+                "day": "2025-12-02",
+                "holder_growth": 78,
+                "token": "MON",
+                "total_holders": 9114
+            },
+            {
+                "day": "2025-12-01",
+                "holder_growth": 74,
+                "token": "HYPE",
+                "total_holders": 2367
+            },
+            {
+                "day": "2025-12-01",
+                "holder_growth": -177,
+                "token": "MON",
+                "total_holders": 9036
+            },
+            {
+                "day": "2025-11-30",
+                "holder_growth": -19,
+                "token": "HYPE",
+                "total_holders": 2293
+            },
+            {
+                "day": "2025-11-30",
+                "holder_growth": -145,
+                "token": "MON",
+                "total_holders": 9213
+            },
+            {
+                "day": "2025-11-29",
+                "holder_growth": 13,
+                "token": "HYPE",
+                "total_holders": 2312
+            },
+            {
+                "day": "2025-11-29",
+                "holder_growth": -127,
+                "token": "MON",
+                "total_holders": 9358
+            },
+            {
+                "day": "2025-11-28",
+                "holder_growth": 31,
+                "token": "HYPE",
+                "total_holders": 2299
+            },
+            {
+                "day": "2025-11-28",
+                "holder_growth": -373,
+                "token": "MON",
+                "total_holders": 9485
+            },
+            {
+                "day": "2025-11-27",
+                "holder_growth": 44,
+                "token": "HYPE",
+                "total_holders": 2268
+            },
+            {
+                "day": "2025-11-27",
+                "holder_growth": -142,
+                "token": "MON",
+                "total_holders": 9858
+            },
+            {
+                "day": "2025-11-26",
+                "holder_growth": 58,
+                "token": "HYPE",
+                "total_holders": 2224
+            },
+            {
+                "day": "2025-11-26",
+                "holder_growth": 1755,
+                "token": "MON",
+                "total_holders": 10000
+            },
+            {
+                "day": "2025-11-25",
+                "holder_growth": 57,
+                "token": "HYPE",
+                "total_holders": 2166
+            },
+            {
+                "day": "2025-11-25",
+                "holder_growth": 3861,
+                "token": "MON",
+                "total_holders": 8245
+            },
+            {
+                "day": "2025-11-24",
+                "holder_growth": 56,
+                "token": "HYPE",
+                "total_holders": 2109
+            },
+            {
+                "day": "2025-11-24",
+                "holder_growth": 4382,
+                "token": "MON",
+                "total_holders": 4384
+            },
+            {
+                "day": "2025-11-23",
+                "holder_growth": 62,
+                "token": "HYPE",
+                "total_holders": 2053
+            },
+            {
+                "day": "2025-11-23",
+                "holder_growth": 0,
+                "token": "MON",
+                "total_holders": 2
+            },
+            {
+                "day": "2025-11-22",
+                "holder_growth": 27,
+                "token": "HYPE",
+                "total_holders": 1991
+            },
+            {
+                "day": "2025-11-22",
+                "holder_growth": 0,
+                "token": "MON",
+                "total_holders": 2
+            },
+            {
+                "day": "2025-11-21",
+                "holder_growth": 76,
+                "token": "HYPE",
+                "total_holders": 1964
+            },
+            {
+                "day": "2025-11-21",
+                "holder_growth": 0,
+                "token": "MON",
+                "total_holders": 2
+            },
+            {
+                "day": "2025-11-20",
+                "holder_growth": 38,
+                "token": "HYPE",
+                "total_holders": 1888
+            },
+            {
+                "day": "2025-11-20",
+                "holder_growth": null,
+                "token": "MON",
+                "total_holders": 2
+            },
+            {
+                "day": "2025-11-19",
+                "holder_growth": 29,
+                "token": "HYPE",
+                "total_holders": 1850
+            },
+            {
+                "day": "2025-11-18",
+                "holder_growth": 29,
+                "token": "HYPE",
+                "total_holders": 1821
+            },
+            {
+                "day": "2025-11-17",
+                "holder_growth": 54,
+                "token": "HYPE",
+                "total_holders": 1792
+            },
+            {
+                "day": "2025-11-16",
+                "holder_growth": 34,
+                "token": "HYPE",
+                "total_holders": 1738
+            },
+            {
+                "day": "2025-11-15",
+                "holder_growth": 21,
+                "token": "HYPE",
+                "total_holders": 1704
+            },
+            {
+                "day": "2025-11-14",
+                "holder_growth": 40,
+                "token": "HYPE",
+                "total_holders": 1683
+            },
+            {
+                "day": "2025-11-13",
+                "holder_growth": -4,
+                "token": "HYPE",
+                "total_holders": 1643
+            },
+            {
+                "day": "2025-11-12",
+                "holder_growth": 23,
+                "token": "HYPE",
+                "total_holders": 1647
+            },
+            {
+                "day": "2025-11-11",
+                "holder_growth": 28,
+                "token": "HYPE",
+                "total_holders": 1624
+            },
+            {
+                "day": "2025-11-10",
+                "holder_growth": 4,
+                "token": "HYPE",
+                "total_holders": 1596
+            },
+            {
+                "day": "2025-11-09",
+                "holder_growth": 13,
+                "token": "HYPE",
+                "total_holders": 1592
+            },
+            {
+                "day": "2025-11-08",
+                "holder_growth": 19,
+                "token": "HYPE",
+                "total_holders": 1579
+            },
+            {
+                "day": "2025-11-07",
+                "holder_growth": 40,
+                "token": "HYPE",
+                "total_holders": 1560
+            },
+            {
+                "day": "2025-11-06",
+                "holder_growth": 9,
+                "token": "HYPE",
+                "total_holders": 1520
+            },
+            {
+                "day": "2025-11-05",
+                "holder_growth": 92,
+                "token": "HYPE",
+                "total_holders": 1511
+            },
+            {
+                "day": "2025-11-04",
+                "holder_growth": 51,
+                "token": "HYPE",
+                "total_holders": 1419
+            },
+            {
+                "day": "2025-11-03",
+                "holder_growth": 67,
+                "token": "HYPE",
+                "total_holders": 1368
+            },
+            {
+                "day": "2025-11-02",
+                "holder_growth": 37,
+                "token": "HYPE",
+                "total_holders": 1301
+            },
+            {
+                "day": "2025-11-01",
+                "holder_growth": 32,
+                "token": "HYPE",
+                "total_holders": 1264
+            },
+            {
+                "day": "2025-10-31",
+                "holder_growth": 41,
+                "token": "HYPE",
+                "total_holders": 1232
+            },
+            {
+                "day": "2025-10-30",
+                "holder_growth": 29,
+                "token": "HYPE",
+                "total_holders": 1191
+            },
+            {
+                "day": "2025-10-29",
+                "holder_growth": 75,
+                "token": "HYPE",
+                "total_holders": 1162
+            },
+            {
+                "day": "2025-10-28",
+                "holder_growth": 59,
+                "token": "HYPE",
+                "total_holders": 1087
+            },
+            {
+                "day": "2025-10-27",
+                "holder_growth": 25,
+                "token": "HYPE",
+                "total_holders": 1028
+            },
+            {
+                "day": "2025-10-26",
+                "holder_growth": 132,
+                "token": "HYPE",
+                "total_holders": 1003
+            },
+            {
+                "day": "2025-10-25",
+                "holder_growth": 81,
+                "token": "HYPE",
+                "total_holders": 871
+            },
+            {
+                "day": "2025-10-24",
+                "holder_growth": 35,
+                "token": "HYPE",
+                "total_holders": 790
+            },
+            {
+                "day": "2025-10-23",
+                "holder_growth": 108,
+                "token": "HYPE",
+                "total_holders": 755
+            },
+            {
+                "day": "2025-10-22",
+                "holder_growth": 70,
+                "token": "HYPE",
+                "total_holders": 647
+            },
+            {
+                "day": "2025-10-21",
+                "holder_growth": 91,
+                "token": "HYPE",
+                "total_holders": 577
+            },
+            {
+                "day": "2025-10-20",
+                "holder_growth": 16,
+                "token": "HYPE",
+                "total_holders": 486
+            },
+            {
+                "day": "2025-10-19",
+                "holder_growth": 22,
+                "token": "HYPE",
+                "total_holders": 470
+            },
+            {
+                "day": "2025-10-18",
+                "holder_growth": 11,
+                "token": "HYPE",
+                "total_holders": 448
+            },
+            {
+                "day": "2025-10-17",
+                "holder_growth": 32,
+                "token": "HYPE",
+                "total_holders": 437
+            },
+            {
+                "day": "2025-10-16",
+                "holder_growth": 31,
+                "token": "HYPE",
+                "total_holders": 405
+            },
+            {
+                "day": "2025-10-15",
+                "holder_growth": 28,
+                "token": "HYPE",
+                "total_holders": 374
+            },
+            {
+                "day": "2025-10-14",
+                "holder_growth": 36,
+                "token": "HYPE",
+                "total_holders": 346
+            },
+            {
+                "day": "2025-10-13",
+                "holder_growth": 69,
+                "token": "HYPE",
+                "total_holders": 310
+            },
+            {
+                "day": "2025-10-12",
+                "holder_growth": 69,
+                "token": "HYPE",
+                "total_holders": 241
+            },
+            {
+                "day": "2025-10-11",
+                "holder_growth": 94,
+                "token": "HYPE",
+                "total_holders": 172
+            },
+            {
+                "day": "2025-10-10",
+                "holder_growth": 77,
+                "token": "HYPE",
+                "total_holders": 78
+            },
+            {
+                "day": "2025-10-09",
+                "holder_growth": 0,
+                "token": "HYPE",
+                "total_holders": 1
+            },
+            {
+                "day": "2025-10-08",
+                "holder_growth": null,
+                "token": "HYPE",
+                "total_holders": 1
+            }
+        ],
+        "metadata": {
+            "column_names": [
+                "day",
+                "token",
+                "total_holders",
+                "holder_growth"
+            ],
+            "column_types": [
+                "date",
+                "varchar(4)",
+                "bigint",
+                "bigint"
+            ],
+            "row_count": 313,
+            "result_set_bytes": 8877,
+            "total_row_count": 313,
+            "total_result_set_bytes": 7313,
+            "datapoint_count": 1252,
+            "pending_time_millis": 752,
+            "execution_time_millis": 20515
+        }
+    }
+}

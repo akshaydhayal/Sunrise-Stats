@@ -3,6 +3,7 @@ import { DuneClient } from "@duneanalytics/client-sdk";
 import dbConnect from '@/lib/mongodb';
 import AssetData from '@/models/AssetData';
 import VolumeData from '@/models/VolumeData';
+import HolderData from '@/models/HolderData';
 
 export async function POST(req) {
   try {
@@ -85,9 +86,45 @@ export async function POST(req) {
       console.error("Volume Data Sync Error:", volumeError);
     }
 
+    // FETCH HOLDERS DATA
+    let insertedHolders = 0;
+    let updatedHolders = 0;
+    try {
+      const holders_query_result = await client.getLatestResult({ queryId: 6733727 });
+      if (holders_query_result && holders_query_result.result && holders_query_result.result.rows) {
+        const hRows = holders_query_result.result.rows;
+        for (const row of hRows) {
+          if (!row.day || !row.token) continue;
+          const date = new Date(row.day);
+          
+          const existingRecord = await HolderData.findOne({
+            date: date,
+            token: row.token
+          });
+          
+          if (existingRecord) {
+            existingRecord.total_holders = row.total_holders;
+            existingRecord.holder_growth = row.holder_growth;
+            await existingRecord.save();
+            updatedHolders++;
+          } else {
+            await HolderData.create({
+              date: date,
+              token: row.token,
+              total_holders: row.total_holders,
+              holder_growth: row.holder_growth
+            });
+            insertedHolders++;
+          }
+        }
+      }
+    } catch (holdersError) {
+      console.error("Holders Data Sync Error:", holdersError);
+    }
+
     return NextResponse.json({ 
       success: true, 
-      message: `Sync complete. Assets (In: ${inserted}, Up: ${updated}). Volume (In: ${insertedVolume}, Up: ${updatedVolume})` 
+      message: `Sync complete. Assets (In: ${inserted}, Up: ${updated}). Volume (In: ${insertedVolume}, Up: ${updatedVolume}). Holders (In: ${insertedHolders}, Up: ${updatedHolders})` 
     });
     
   } catch (error) {

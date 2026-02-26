@@ -2,7 +2,7 @@
 import React from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 350 }) {
+export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 350, isDollar = true, labelKey = 'Market Cap' }) {
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       const pData = payload[0].payload;
@@ -27,8 +27,8 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
           <p style={{ margin: 0, fontWeight: 'bold' }}>{dateLabel}</p>
           <div style={{ marginTop: '8px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: '16px', fontWeight: 'bold' }}>
-              <span style={{ color: stroke }}>Market Cap:</span>
-              <span>${val?.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }) || '0.00'}</span>
+              <span style={{ color: stroke }}>{labelKey}:</span>
+              <span>{isDollar ? '$' : ''}{val?.toLocaleString(undefined, { minimumFractionDigits: isDollar ? 2 : 0, maximumFractionDigits: isDollar ? 2 : 0 }) || '0'}</span>
             </div>
           </div>
         </div>
@@ -71,9 +71,9 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
             axisLine={false}
             tickMargin={8}
             tickFormatter={(value) => {
-              if (value >= 1000000) return `$${(value / 1000000).toFixed(1)}M`;
-              if (value >= 1000) return `$${(value / 1000).toFixed(1)}K`;
-              return `$${value}`;
+              if (value >= 1000000) return `${isDollar ? '$' : ''}${(value / 1000000).toFixed(1)}M`;
+              if (value >= 1000) return `${isDollar ? '$' : ''}${(value / 1000).toFixed(1)}K`;
+              return `${isDollar ? '$' : ''}${value}`;
             }}
           />
           <Tooltip content={<CustomTooltip />} />

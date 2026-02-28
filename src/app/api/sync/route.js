@@ -4,6 +4,7 @@ import dbConnect from '@/lib/mongodb';
 import AssetData from '@/models/AssetData';
 import VolumeData from '@/models/VolumeData';
 import HolderData from '@/models/HolderData';
+import TradingVolumeData from '@/models/TradingVolumeData';
 import AppMetadata from '@/models/AppMetadata';
 
 export async function POST(req) {
@@ -141,6 +142,109 @@ export async function POST(req) {
         { upsert: true }
       );
       message = `Holders sync complete. Models (In: ${insertedHolders}, Up: ${updatedHolders})`;
+    } else if (syncType === 'trading_volume') {
+      let insertedTrading = 0;
+      let updatedTrading = 0;
+      
+      const duneQueries = {
+        MON: 6757505,
+        HYPE: 6757494,
+        LIT: 6757234,
+        INX: 6757510
+      };
+      
+      const cgEndpoints = {
+        MON: 'https://api.coingecko.com/api/v3/coins/monad/market_chart?vs_currency=usd&days=180',
+        HYPE: 'https://api.coingecko.com/api/v3/coins/hyperliquid/market_chart?vs_currency=usd&days=180',
+        LIT: 'https://api.coingecko.com/api/v3/coins/lighter/market_chart?vs_currency=usd&days=180',
+        INX: 'https://api.coingecko.com/api/v3/coins/infinex-2/market_chart?vs_currency=usd&days=180'
+      };
+
+      for (const token of ['MON', 'HYPE', 'LIT', 'INX']) {
+        // 1. Fetch DEX Data
+        const dexResult = await client.getLatestResult({ queryId: duneQueries[token] });
+        if (!dexResult || !dexResult.result || !dexResult.result.rows) continue;
+        
+        const dexRows = dexResult.result.rows;
+        // Process DEX rows into a map by date string (YYYY-MM-DD)
+        const dexMap = {};
+        for (const row of dexRows) {
+          if (!row.date) continue;
+          const dateObj = new Date(row.date);
+          const dateStr = dateObj.toISOString().split('T')[0];
+          dexMap[dateStr] = {
+            date: dateObj,
+            dex_volume: row.daily_volume || 0
+          };
+        }
+
+        // 2. Fetch CEX Data
+        const cgRes = await fetch(cgEndpoints[token]);
+        if (!cgRes.ok) {
+          console.error(`Failed to fetch CG data for ${token}`);
+          continue;
+        }
+        const cgData = await cgRes.json();
+        const cexVolumes = cgData.total_volumes || [];
+        const cexPrices = cgData.prices || [];
+
+        // Map CEX volumes by date string
+        const cexMap = {};
+        for (const item of cexVolumes) {
+          const dateObj = new Date(item[0]);
+          const dateStr = dateObj.toISOString().split('T')[0];
+          if (!cexMap[dateStr]) {
+            cexMap[dateStr] = { volume: item[1] };
+          }
+        }
+        
+        // Map CEX prices by date string
+        for (const item of cexPrices) {
+          const dateObj = new Date(item[0]);
+          const dateStr = dateObj.toISOString().split('T')[0];
+          if (cexMap[dateStr]) {
+            cexMap[dateStr].price = item[1];
+          }
+        }
+
+        // 3. Merge based on DEX dates (to strictly align with the first DEX date)
+        for (const dateStr of Object.keys(dexMap)) {
+          const dexEntry = dexMap[dateStr];
+          const cexEntry = cexMap[dateStr];
+          
+          const cex_volume = cexEntry ? cexEntry.volume : 0;
+          const cex_price = cexEntry && cexEntry.price ? cexEntry.price : null;
+
+          const existingRecord = await TradingVolumeData.findOne({
+            date: dexEntry.date,
+            token: token
+          });
+
+          if (existingRecord) {
+            existingRecord.dex_volume = dexEntry.dex_volume;
+            existingRecord.cex_volume = cex_volume;
+            existingRecord.cex_price = cex_price;
+            await existingRecord.save();
+            updatedTrading++;
+          } else {
+            await TradingVolumeData.create({
+              date: dexEntry.date,
+              token: token,
+              dex_volume: dexEntry.dex_volume,
+              cex_volume: cex_volume,
+              cex_price: cex_price
+            });
+            insertedTrading++;
+          }
+        }
+      }
+
+      await AppMetadata.findOneAndUpdate(
+        { key: 'trading_volume_sync' },
+        { lastSync: new Date() },
+        { upsert: true }
+      );
+      message = `Trading Volume sync complete. Models (In: ${insertedTrading}, Up: ${updatedTrading})`;
     } else {
       return NextResponse.json({ success: false, error: 'Invalid sync type' }, { status: 400 });
     }

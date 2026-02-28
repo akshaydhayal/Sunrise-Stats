@@ -1,12 +1,13 @@
 "use client";
 import React from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { ComposedChart, Area, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 350, isDollar = true, labelKey = 'Market Cap' }) {
   const CustomTooltip = ({ active, payload, label }) => {
     if (active && payload && payload.length) {
       const pData = payload[0].payload;
       const val = pData[dataKey];
+      const change = pData.dailyChange || 0;
       const dateLabel = new Date(label).toLocaleDateString(undefined, {
         year: 'numeric', month: 'short', day: 'numeric'
       });
@@ -30,6 +31,12 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
               <span style={{ color: stroke }}>{labelKey}:</span>
               <span>{isDollar ? '$' : ''}{val?.toLocaleString(undefined, { minimumFractionDigits: isDollar ? 2 : 0, maximumFractionDigits: isDollar ? 2 : 0 }) || '0'}</span>
             </div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '16px', fontSize: '13px' }}>
+              <span style={{ color: change >= 0 ? '#10b981' : '#ef4444' }}>Daily Change:</span>
+              <span style={{ color: change >= 0 ? '#10b981' : '#ef4444' }}>
+                {change >= 0 ? '+' : ''}{isDollar ? '$' : ''}{Math.abs(change).toLocaleString(undefined, { minimumFractionDigits: isDollar ? 2 : 0, maximumFractionDigits: isDollar ? 2 : 0 })}
+              </span>
+            </div>
           </div>
         </div>
       );
@@ -46,7 +53,7 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
   return (
     <div style={{ position: 'relative', width: '100%', height: height, marginTop: '16px' }}>
       <ResponsiveContainer width="100%" height="100%">
-        <AreaChart data={data} margin={{ top: 20, right: 30, left: 30, bottom: 25 }}>
+        <ComposedChart data={data} margin={{ top: 20, right: 10, left: 10, bottom: 25 }}>
           <defs>
             <linearGradient id={`color${dataKey}`} x1="0" y1="0" x2="0" y2="1">
               <stop offset="5%" stopColor={fill} stopOpacity={0.8}/>
@@ -65,6 +72,9 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
             minTickGap={20}
           />
           <YAxis 
+            yAxisId="right"
+            orientation="right"
+            domain={['dataMin', 'auto']}
             stroke="rgba(255,255,255,0.4)" 
             tick={{ fill: 'rgba(255,255,255,0.4)', fontSize: 11 }}
             tickLine={false}
@@ -76,17 +86,36 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
               return `${isDollar ? '$' : ''}${value}`;
             }}
           />
-          <Tooltip content={<CustomTooltip />} />
+          <YAxis 
+            yAxisId="left"
+            orientation="left"
+            stroke="rgba(255,255,255,0.4)" 
+            tick={{ fill: 'rgba(113,113,122,0.8)', fontSize: 11 }}
+            tickLine={false}
+            axisLine={false}
+            tickMargin={8}
+            tickFormatter={(value) => {
+              if (Math.abs(value) >= 1000000) return `${isDollar ? '$' : ''}${(value / 1000000).toFixed(1)}M`;
+              if (Math.abs(value) >= 1000) return `${isDollar ? '$' : ''}${(value / 1000).toFixed(1)}K`;
+              return `${isDollar ? '$' : ''}${value}`;
+            }}
+          />
+          <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.05)' }} />
+          <Bar yAxisId="left" dataKey="dailyChange" name="Daily Change">
+            {data && data.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={(entry.dailyChange || 0) >= 0 ? '#10b981' : '#ef4444'} opacity={0.5} />
+            ))}
+          </Bar>
           <Area 
+            yAxisId="right"
             type="monotone" 
             dataKey={dataKey} 
             stroke={stroke} 
-            strokeWidth={3}
-            fillOpacity={1} 
-            fill={`url(#color${dataKey})`} 
+            strokeWidth={2}
+            fillOpacity={0} 
             animationDuration={1500}
           />
-        </AreaChart>
+        </ComposedChart>
       </ResponsiveContainer>
     </div>
   );

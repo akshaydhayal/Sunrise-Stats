@@ -93,37 +93,66 @@ export default function TradingVolumeDashboard() {
           </h3>
         </div>
 
-        <div className="col-span-12" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '12px' }}>
+        <div className="col-span-12" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '16px' }}>
           <MetricCard 
             title="Total Combined Vol" 
             value={`$${((latestStats.total_dex_volume + latestStats.total_cex_volume) / 1000000).toFixed(2)}M`}
-            icon={<Database size={16} color="var(--primary-orange)" />}
+            icon={<Database size={16} color="#fff" />}
             isPositive={true}
           />
           <MetricCard 
-            title="HYPE Trading Vol" 
-            value={latestStats.tokens.HYPE ? `$${((latestStats.tokens.HYPE.dex_volume + latestStats.tokens.HYPE.cex_volume) / 1000000).toFixed(2)}M` : '$0'}
-            icon={<TokenIcon symbol="HYPE" size={16} />}
-            isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dex_volume > 0}
+            title="Total CEX Vol" 
+            value={`$${(latestStats.total_cex_volume / 1000000).toFixed(2)}M`}
+            icon={<Database size={16} color="#3b82f6" />}
+            isPositive={true}
           />
           <MetricCard 
-            title="MON Trading Vol" 
-            value={latestStats.tokens.MON ? `$${((latestStats.tokens.MON.dex_volume + latestStats.tokens.MON.cex_volume) / 1000000).toFixed(2)}M` : '$0'}
-            icon={<TokenIcon symbol="MON" size={16} />}
-            isPositive={latestStats.tokens.MON && latestStats.tokens.MON.dex_volume > 0}
+            title="Total DEX Vol" 
+            value={`$${(latestStats.total_dex_volume / 1000000).toFixed(2)}M`}
+            icon={<Database size={16} color="var(--primary-orange)" />}
+            isPositive={true}
           />
-          <MetricCard 
-            title="INX Trading Vol" 
-            value={latestStats.tokens.INX ? `$${((latestStats.tokens.INX.dex_volume + latestStats.tokens.INX.cex_volume) / 1000000).toFixed(2)}M` : '$0'}
-            icon={<TokenIcon symbol="INX" size={16} />}
-            isPositive={latestStats.tokens.INX && latestStats.tokens.INX.dex_volume > 0}
-          />
-          <MetricCard 
-            title="LIT Trading Vol" 
-            value={latestStats.tokens.LIT ? `$${((latestStats.tokens.LIT.dex_volume + latestStats.tokens.LIT.cex_volume) / 1000000).toFixed(2)}M` : '$0'}
-            icon={<TokenIcon symbol="LIT" size={16} />}
-            isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.dex_volume > 0}
-          />
+        </div>
+
+        {/* Individual Asset Volumes (Compact Badges) */}
+        <div className="col-span-12" style={{ marginTop: '0px', marginBottom: '8px' }}>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            {['HYPE', 'MON', 'INX', 'LIT'].map(sym => {
+              const tk = latestStats.tokens[sym] || { dex_volume: 0, cex_volume: 0 };
+              
+              const formatVol = (v) => {
+                if (v >= 1000000) return `$${(v / 1000000).toFixed(2)}M`;
+                if (v >= 1000) return `$${(v / 1000).toFixed(1)}K`;
+                return `$${v}`;
+              };
+
+              return (
+                <div key={sym} style={{ 
+                  flex: '1 1 auto', 
+                  minWidth: '220px', 
+                  background: 'var(--glass-bg)', 
+                  border: '1px solid var(--glass-border)', 
+                  borderRadius: '16px', 
+                  padding: '12px 16px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '16px',
+                  boxShadow: '0 4px 16px rgba(0,0,0,0.1)'
+                }}>
+                  <div style={{ padding: '6px', background: 'rgba(255,255,255,0.03)', borderRadius: '8px', display: 'flex' }}>
+                    <TokenIcon symbol={sym} size={28} />
+                  </div>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ fontWeight: '600', fontSize: '13px', marginBottom: '6px', color: '#fff', letterSpacing: '0.02em' }}>{sym} Daily Volume</div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px', lineHeight: '1.4', fontWeight: '500' }}>
+                      <span style={{ color: '#3b82f6' }}>CEX: {formatVol(tk.cex_volume)}</span>
+                      <span style={{ color: 'var(--primary-orange)' }}>DEX: {formatVol(tk.dex_volume)}</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         {/* Main Chart */}

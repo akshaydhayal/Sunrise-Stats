@@ -13,10 +13,12 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
       // Recharts log scale crashes on 0, elevate 0 to 1 for visual fallback
       const safeDex = dex > 0 ? dex : 1;
       const safeCex = cex > 0 ? cex : 1;
+      const safeRatio = ratio > 0 ? ratio : 0.1;
 
       return {
         ...d,
         ratioValue: Number(ratio.toFixed(2)),
+        safeRatioValue: Number(safeRatio.toFixed(2)),
         originalDex: dex,
         originalCex: cex,
         safeDex,
@@ -121,6 +123,8 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
           <YAxis 
             yAxisId="right"
             orientation="right"
+            scale="log"
+            domain={['auto', 'auto']}
             stroke="rgba(255,255,255,0.4)" 
             tick={{ fill: 'rgba(168,85,247,0.8)', fontSize: 11, fontWeight: 'bold' }}
             tickLine={false}
@@ -135,7 +139,7 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
           <Bar yAxisId="left" dataKey="safeCex" name="CEX Volume" fill="#3b82f6" opacity={0.5} radius={[4, 4, 0, 0]} />
           
           {/* Foreground Ratio Line */}
-          <Line yAxisId="right" type="monotone" dataKey="ratioValue" name="CEX:DEX Ratio" stroke="#e879f9" strokeWidth={4} dot={false} activeDot={{ r: 7, fill: '#e879f9', stroke: '#fff', strokeWidth: 3 }} />
+          <Line yAxisId="right" type="monotone" dataKey="safeRatioValue" name="CEX:DEX Ratio" stroke="#e879f9" strokeWidth={2} dot={false} activeDot={{ r: 5, fill: '#e879f9', stroke: '#fff', strokeWidth: 2 }} />
         </ComposedChart>
       </ResponsiveContainer>
     </div>

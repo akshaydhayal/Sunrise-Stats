@@ -56,7 +56,7 @@ export default function VolumeDashboard() {
     return (
       <div>
         <div className="header-row">
-          <h2>Net Buy Volume</h2>
+          <h2>Buy vs Sell Volume</h2>
           <LastUpdated syncKey="volume_sync" />
         </div>
         <div className="glass-panel" style={{ textAlign: 'center', padding: '60px 20px' }}>
@@ -71,8 +71,8 @@ export default function VolumeDashboard() {
     <div>
       <div className="header-row">
         <div>
-          <h2>Net Buy Volume</h2>
-          <p style={{ color: 'var(--text-muted)', marginTop: '4px' }}>Buy vs Sell Volume of Canonical Assets</p>
+          <h2>Buy vs Sell Volume</h2>
+          <p style={{ color: 'var(--text-muted)', marginTop: '4px' }}>Track precise Buy vs Sell dynamics across assets</p>
         </div>
         <LastUpdated syncKey="volume_sync" />
       </div>
@@ -89,40 +89,44 @@ export default function VolumeDashboard() {
             borderBottom: '1px solid rgba(255,255,255,0.1)', 
             paddingBottom: '12px' 
           }}>
-            Current Day Net Volume Breakdown
+            Buy vs Sell Volume Breakdown
           </h3>
         </div>
 
         <div className="col-span-3">
           <MetricCard 
-            title="HYPE Net Buy Vol" 
-            value={latestStats.tokens.HYPE ? `$${(Math.abs(latestStats.tokens.HYPE.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
+            title="HYPE Net Volume" 
+            value={latestStats.tokens.HYPE ? `${latestStats.tokens.HYPE.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.HYPE.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
             icon={<TokenIcon symbol="HYPE" size={16} />}
-            isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.net_buy_volume >= 0}
+            change={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChangePercent ? `${latestStats.tokens.HYPE.dailyChangePercent.toFixed(1)}% vs yesterday` : null}
+            isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChangePercent >= 0}
           />
         </div>
         <div className="col-span-3">
           <MetricCard 
-            title="MON Net Buy Vol" 
-            value={latestStats.tokens.MON ? `$${(Math.abs(latestStats.tokens.MON.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
+            title="MON Net Volume" 
+            value={latestStats.tokens.MON ? `${latestStats.tokens.MON.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.MON.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
             icon={<TokenIcon symbol="MON" size={16} />}
-            isPositive={latestStats.tokens.MON && latestStats.tokens.MON.net_buy_volume >= 0}
+            change={latestStats.tokens.MON && latestStats.tokens.MON.dailyChangePercent ? `${latestStats.tokens.MON.dailyChangePercent.toFixed(1)}% vs yesterday` : null}
+            isPositive={latestStats.tokens.MON && latestStats.tokens.MON.dailyChangePercent >= 0}
           />
         </div>
         <div className="col-span-3">
           <MetricCard 
-            title="INX Net Buy Vol" 
-            value={latestStats.tokens.INX ? `$${(Math.abs(latestStats.tokens.INX.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
+            title="INX Net Volume" 
+            value={latestStats.tokens.INX ? `${latestStats.tokens.INX.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.INX.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
             icon={<TokenIcon symbol="INX" size={16} />}
-            isPositive={latestStats.tokens.INX && latestStats.tokens.INX.net_buy_volume >= 0}
+            change={latestStats.tokens.INX && latestStats.tokens.INX.dailyChangePercent ? `${latestStats.tokens.INX.dailyChangePercent.toFixed(1)}% vs yesterday` : null}
+            isPositive={latestStats.tokens.INX && latestStats.tokens.INX.dailyChangePercent >= 0}
           />
         </div>
         <div className="col-span-3">
           <MetricCard 
-            title="LIT Net Buy Vol" 
-            value={latestStats.tokens.LIT ? `$${(Math.abs(latestStats.tokens.LIT.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
+            title="LIT Net Volume" 
+            value={latestStats.tokens.LIT ? `${latestStats.tokens.LIT.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.LIT.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
             icon={<TokenIcon symbol="LIT" size={16} />}
-            isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.net_buy_volume >= 0}
+            change={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChangePercent ? `${latestStats.tokens.LIT.dailyChangePercent.toFixed(1)}% vs yesterday` : null}
+            isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChangePercent >= 0}
           />
         </div>
 
@@ -131,7 +135,7 @@ export default function VolumeDashboard() {
           <div className="glass-panel">
             <div className="panel-title">
               <Database size={16} />
-              Aggregated Net Buy Volume (All Assets)
+              Aggregated Buy vs Sell Volume (All Assets)
             </div>
             <GlassBarChart 
               data={chartData.overall} 
@@ -146,7 +150,7 @@ export default function VolumeDashboard() {
           <div className="glass-panel">
             <div className="panel-title">
               <TokenIcon symbol="HYPE" size={16} />
-              HYPE Net Buy Volume
+              HYPE Buy vs Sell Volume
             </div>
             <GlassBarChart 
               data={chartData.tokens.HYPE || []} 
@@ -160,7 +164,7 @@ export default function VolumeDashboard() {
           <div className="glass-panel">
             <div className="panel-title">
               <TokenIcon symbol="MON" size={16} />
-              MON Net Buy Volume
+              MON Buy vs Sell Volume
             </div>
             <GlassBarChart 
               data={chartData.tokens.MON || []} 
@@ -174,7 +178,7 @@ export default function VolumeDashboard() {
           <div className="glass-panel">
             <div className="panel-title">
               <TokenIcon symbol="INX" size={16} />
-              INX Net Buy Volume
+              INX Buy vs Sell Volume
             </div>
             <GlassBarChart 
               data={chartData.tokens.INX || []} 
@@ -188,7 +192,7 @@ export default function VolumeDashboard() {
           <div className="glass-panel">
             <div className="panel-title">
               <TokenIcon symbol="LIT" size={16} />
-              LIT Net Buy Volume
+              LIT Buy vs Sell Volume
             </div>
             <GlassBarChart 
               data={chartData.tokens.LIT || []} 

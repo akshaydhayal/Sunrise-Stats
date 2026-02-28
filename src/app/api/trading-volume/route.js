@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import dbConnect from '@/lib/mongodb';
 import TradingVolumeData from '@/models/TradingVolumeData';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(req) {
   try {
     await dbConnect();

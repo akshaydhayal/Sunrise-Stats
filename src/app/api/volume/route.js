@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import dbConnect from '@/lib/mongodb';
 import VolumeData from '@/models/VolumeData';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(req) {
   try {
     await dbConnect();
@@ -56,16 +58,30 @@ export async function GET(req) {
 
     processedData.overall = Object.values(dateMap).sort((a, b) => new Date(a.date) - new Date(b.date));
 
-    // Get latest stats
+    // Get latest stats with % change
     const latestStats = {
       total_buy_volume: 0,
       total_sell_volume: 0,
       total_net_buy_volume: 0,
+      dailyChangePercent: 0,
       tokens: {}
     };
 
-    if (processedData.overall.length > 0) {
+    if (processedData.overall.length > 1) {
       const last = processedData.overall[processedData.overall.length - 1];
+      const prev = processedData.overall[processedData.overall.length - 2];
+      
+      latestStats.total_buy_volume = last.total_buy_volume;
+      latestStats.total_sell_volume = last.total_sell_volume;
+      latestStats.total_net_buy_volume = last.total_net_buy_volume;
+      
+      const prevTotal = prev.total_buy_volume + prev.total_sell_volume;
+      const currTotal = last.total_buy_volume + last.total_sell_volume;
+      if (prevTotal > 0) {
+        latestStats.dailyChangePercent = ((currTotal - prevTotal) / prevTotal) * 100;
+      }
+    } else if (processedData.overall.length === 1) {
+      const last = processedData.overall[0];
       latestStats.total_buy_volume = last.total_buy_volume;
       latestStats.total_sell_volume = last.total_sell_volume;
       latestStats.total_net_buy_volume = last.total_net_buy_volume;
@@ -73,8 +89,18 @@ export async function GET(req) {
 
     Object.keys(processedData.tokens).forEach(token => {
       const arr = processedData.tokens[token];
-      if (arr.length > 0) {
-        latestStats.tokens[token] = arr[arr.length - 1];
+      if (arr.length > 1) {
+        const last = arr[arr.length - 1];
+        const prev = arr[arr.length - 2];
+        const prevTotal = (prev.buy_volume || 0) + (prev.sell_volume || 0);
+        const currTotal = (last.buy_volume || 0) + (last.sell_volume || 0);
+        let pct = 0;
+        if (prevTotal > 0) {
+          pct = ((currTotal - prevTotal) / prevTotal) * 100;
+        }
+        latestStats.tokens[token] = { ...last, dailyChangePercent: pct };
+      } else if (arr.length === 1) {
+        latestStats.tokens[token] = { ...arr[0], dailyChangePercent: 0 };
       }
     });
 

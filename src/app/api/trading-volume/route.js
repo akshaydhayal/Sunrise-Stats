@@ -91,6 +91,19 @@ export async function GET(req) {
       const last = processedData.overall[processedData.overall.length - 1];
       latestStats.total_dex_volume = last.total_dex_volume;
       latestStats.total_cex_volume = last.total_cex_volume;
+      
+      const prev = processedData.overall.length > 1 ? processedData.overall[processedData.overall.length - 2] : last;
+      const lastTotal = last.total_dex_volume + last.total_cex_volume;
+      const prevTotal = prev.total_dex_volume + prev.total_cex_volume;
+      
+      latestStats.total_change = lastTotal - prevTotal;
+      latestStats.total_change_percent = prevTotal > 0 ? (latestStats.total_change / prevTotal) * 100 : 0;
+      
+      latestStats.cex_change = last.total_cex_volume - prev.total_cex_volume;
+      latestStats.cex_change_percent = prev.total_cex_volume > 0 ? (latestStats.cex_change / prev.total_cex_volume) * 100 : 0;
+      
+      latestStats.dex_change = last.total_dex_volume - prev.total_dex_volume;
+      latestStats.dex_change_percent = prev.total_dex_volume > 0 ? (latestStats.dex_change / prev.total_dex_volume) * 100 : 0;
     }
 
     Object.keys(processedData.tokens).forEach(token => {

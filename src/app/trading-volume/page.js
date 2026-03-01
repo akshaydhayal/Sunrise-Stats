@@ -97,20 +97,23 @@ export default function TradingVolumeDashboard() {
           <MetricCard 
             title="Total Combined Vol" 
             value={`$${((latestStats.total_dex_volume + latestStats.total_cex_volume) / 1000000).toFixed(2)}M`}
+            change={latestStats.total_change_percent ? `${Math.abs(latestStats.total_change_percent).toFixed(1)}%` : null}
             icon={<Database size={16} color="#fff" />}
-            isPositive={true}
+            isPositive={latestStats.total_change >= 0}
           />
           <MetricCard 
             title="Total CEX Vol" 
             value={`$${(latestStats.total_cex_volume / 1000000).toFixed(2)}M`}
+            change={latestStats.cex_change_percent ? `${Math.abs(latestStats.cex_change_percent).toFixed(1)}%` : null}
             icon={<Database size={16} color="#3b82f6" />}
-            isPositive={true}
+            isPositive={latestStats.cex_change >= 0}
           />
           <MetricCard 
             title="Total DEX Vol" 
             value={`$${(latestStats.total_dex_volume / 1000000).toFixed(2)}M`}
+            change={latestStats.dex_change_percent ? `${Math.abs(latestStats.dex_change_percent).toFixed(1)}%` : null}
             icon={<Database size={16} color="var(--primary-orange)" />}
-            isPositive={true}
+            isPositive={latestStats.dex_change >= 0}
           />
         </div>
 

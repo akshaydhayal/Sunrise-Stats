@@ -25,7 +25,7 @@ export async function GET(req) {
       processedData.tokens[item.token].push({
         date: item.date.toISOString().split('T')[0],
         total_holders: item.total_holders,
-        holder_growth: item.holder_growth
+        dailyChange: item.holder_growth
       });
 
       // 2. Organize by date for overall aggregated chart
@@ -38,10 +38,7 @@ export async function GET(req) {
           HYPE_holders: 0,
           INX_holders: 0,
           LIT_holders: 0,
-          MON_growth: 0,
-          HYPE_growth: 0,
-          INX_growth: 0,
-          LIT_growth: 0
+          dailyChange: 0
         };
       }
       
@@ -49,8 +46,8 @@ export async function GET(req) {
       const growth = item.holder_growth || 0;
 
       dateMap[dateStr].total_holders += holders;
+      dateMap[dateStr].dailyChange += growth;
       dateMap[dateStr][`${item.token}_holders`] = holders;
-      dateMap[dateStr][`${item.token}_growth`] = growth;
     });
 
     processedData.overall = Object.values(dateMap).sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -64,6 +61,7 @@ export async function GET(req) {
     if (processedData.overall.length > 0) {
       const last = processedData.overall[processedData.overall.length - 1];
       latestStats.total_holders = last.total_holders;
+      latestStats.dailyChange = last.dailyChange;
     }
 
     Object.keys(processedData.tokens).forEach(token => {

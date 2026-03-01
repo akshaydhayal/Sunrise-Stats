@@ -97,36 +97,37 @@ export default function HoldersDashboard() {
           <MetricCard 
             title="Total Holders" 
             value={latestStats.total_holders.toLocaleString()}
+            change={latestStats.dailyChange ? `${Math.abs(latestStats.dailyChange)}` : null}
             icon={<Users size={16} color="var(--primary-orange)" />}
-            isPositive={true}
+            isPositive={latestStats.dailyChange >= 0}
           />
           <MetricCard 
             title="HYPE Holders" 
             value={latestStats.tokens.HYPE ? latestStats.tokens.HYPE.total_holders.toLocaleString() : '0'}
-            change={latestStats.tokens.HYPE ? `${latestStats.tokens.HYPE.holder_growth >= 0 ? '+' : ''}${latestStats.tokens.HYPE.holder_growth} today` : null}
+            change={latestStats.tokens.HYPE ? `${Math.abs(latestStats.tokens.HYPE.dailyChange)}` : null}
             icon={<TokenIcon symbol="HYPE" size={16} />}
-            isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.holder_growth >= 0}
+            isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChange >= 0}
           />
           <MetricCard 
             title="MON Holders" 
             value={latestStats.tokens.MON ? latestStats.tokens.MON.total_holders.toLocaleString() : '0'}
-            change={latestStats.tokens.MON ? `${latestStats.tokens.MON.holder_growth >= 0 ? '+' : ''}${latestStats.tokens.MON.holder_growth} today` : null}
+            change={latestStats.tokens.MON ? `${Math.abs(latestStats.tokens.MON.dailyChange)}` : null}
             icon={<TokenIcon symbol="MON" size={16} />}
-            isPositive={latestStats.tokens.MON && latestStats.tokens.MON.holder_growth >= 0}
+            isPositive={latestStats.tokens.MON && latestStats.tokens.MON.dailyChange >= 0}
           />
           <MetricCard 
             title="INX Holders" 
             value={latestStats.tokens.INX ? latestStats.tokens.INX.total_holders.toLocaleString() : '0'}
-            change={latestStats.tokens.INX ? `${latestStats.tokens.INX.holder_growth >= 0 ? '+' : ''}${latestStats.tokens.INX.holder_growth} today` : null}
+            change={latestStats.tokens.INX ? `${Math.abs(latestStats.tokens.INX.dailyChange)}` : null}
             icon={<TokenIcon symbol="INX" size={16} />}
-            isPositive={latestStats.tokens.INX && latestStats.tokens.INX.holder_growth >= 0}
+            isPositive={latestStats.tokens.INX && latestStats.tokens.INX.dailyChange >= 0}
           />
           <MetricCard 
             title="LIT Holders" 
             value={latestStats.tokens.LIT ? latestStats.tokens.LIT.total_holders.toLocaleString() : '0'}
-            change={latestStats.tokens.LIT ? `${latestStats.tokens.LIT.holder_growth >= 0 ? '+' : ''}${latestStats.tokens.LIT.holder_growth} today` : null}
+            change={latestStats.tokens.LIT ? `${Math.abs(latestStats.tokens.LIT.dailyChange)}` : null}
             icon={<TokenIcon symbol="LIT" size={16} />}
-            isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.holder_growth >= 0}
+            isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChange >= 0}
           />
         </div>
 

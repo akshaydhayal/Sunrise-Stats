@@ -63,8 +63,8 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
           <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
           <XAxis 
             dataKey="date" 
-            stroke="rgba(255,255,255,0.7)" 
-            tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 10 }} 
+            stroke="rgba(255,255,255,0.9)" 
+            tick={{ fill: 'rgba(255,255,255,0.9)', fontSize: 10, fontWeight: '500' }} 
             tickFormatter={formatTickDate}
             tickLine={false}
             axisLine={false}
@@ -75,8 +75,8 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
             yAxisId="right"
             orientation="right"
             domain={['dataMin', 'auto']}
-            stroke="rgba(255,255,255,0.7)" 
-            tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 11 }}
+            stroke="rgba(255,255,255,0.9)" 
+            tick={{ fill: 'rgba(255,255,255,0.9)', fontSize: 11, fontWeight: '500' }}
             tickLine={false}
             axisLine={false}
             tickMargin={8}
@@ -87,19 +87,19 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
             }}
           >
             <Label 
-              value="Market Cap ($)" 
+              value={`${labelKey} ${isDollar ? '($)' : ''}`} 
               angle={90} 
               position="right" 
               offset={0}
               dx={5}
-              style={{ fill: 'rgba(255,255,255,0.7)', fontSize: 10, fontWeight: 'bold', textAnchor: 'middle' }} 
+              style={{ fill: 'rgba(255,255,255,1.0)', fontSize: 10, fontWeight: '800', textAnchor: 'middle' }} 
             />
           </YAxis>
           <YAxis 
             yAxisId="left"
             orientation="left"
-            stroke="rgba(255,255,255,0.7)" 
-            tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 11 }}
+            stroke="rgba(255,255,255,0.9)" 
+            tick={{ fill: 'rgba(255,255,255,0.9)', fontSize: 11, fontWeight: '500' }}
             tickLine={false}
             axisLine={false}
             tickMargin={8}
@@ -110,12 +110,12 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
             }}
           >
             <Label 
-              value="Daily Change ($)" 
+              value={`Daily Change ${isDollar ? '($)' : ''}`} 
               angle={-90} 
               position="left" 
               offset={0}
               dx={-5}
-              style={{ fill: 'rgba(255,255,255,0.7)', fontSize: 10, fontWeight: 'bold', textAnchor: 'middle' }} 
+              style={{ fill: 'rgba(255,255,255,1.0)', fontSize: 10, fontWeight: '800', textAnchor: 'middle' }} 
             />
           </YAxis>
           <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.05)' }} />

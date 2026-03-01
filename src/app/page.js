@@ -97,32 +97,37 @@ export default function Dashboard() {
           <MetricCard 
             title="Total Assets Cap" 
             value={`$${(latestStats.totalMarketCap / 1000000).toFixed(2)}M`}
+            change={latestStats.dailyChangePercent ? `${Math.abs(latestStats.dailyChangePercent).toFixed(1)}%` : null}
             icon={<DollarSign size={16} color="var(--primary-orange)" />}
-            isPositive={true}
+            isPositive={latestStats.dailyChange >= 0}
           />
           <MetricCard 
             title="HYPE Market Cap" 
             value={latestStats.tokens.HYPE ? `$${(latestStats.tokens.HYPE.marketcap / 1000000).toFixed(2)}M` : '$0'}
+            change={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChangePercent ? `${Math.abs(latestStats.tokens.HYPE.dailyChangePercent).toFixed(1)}%` : null}
             icon={<TokenIcon symbol="HYPE" size={16} />}
-            isPositive={true}
+            isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChange >= 0}
           />
           <MetricCard 
             title="MON Market Cap" 
             value={latestStats.tokens.MON ? `$${(latestStats.tokens.MON.marketcap / 1000000).toFixed(2)}M` : '$0'}
+            change={latestStats.tokens.MON && latestStats.tokens.MON.dailyChangePercent ? `${Math.abs(latestStats.tokens.MON.dailyChangePercent).toFixed(1)}%` : null}
             icon={<TokenIcon symbol="MON" size={16} />}
-            isPositive={true}
+            isPositive={latestStats.tokens.MON && latestStats.tokens.MON.dailyChange >= 0}
           />
           <MetricCard 
             title="INX Market Cap" 
             value={latestStats.tokens.INX ? `$${(latestStats.tokens.INX.marketcap / 1000000).toFixed(2)}M` : '$0'}
+            change={latestStats.tokens.INX && latestStats.tokens.INX.dailyChangePercent ? `${Math.abs(latestStats.tokens.INX.dailyChangePercent).toFixed(1)}%` : null}
             icon={<TokenIcon symbol="INX" size={16} />}
-            isPositive={true}
+            isPositive={latestStats.tokens.INX && latestStats.tokens.INX.dailyChange >= 0}
           />
           <MetricCard 
             title="LIT Market Cap" 
             value={latestStats.tokens.LIT ? `$${(latestStats.tokens.LIT.marketcap / 1000000).toFixed(2)}M` : '$0'}
+            change={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChangePercent ? `${Math.abs(latestStats.tokens.LIT.dailyChangePercent).toFixed(1)}%` : null}
             icon={<TokenIcon symbol="LIT" size={16} />}
-            isPositive={true}
+            isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChange >= 0}
           />
         </div>
 

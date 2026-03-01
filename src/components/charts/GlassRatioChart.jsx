@@ -96,8 +96,8 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
           <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
           <XAxis 
             dataKey="date" 
-            stroke="rgba(255,255,255,0.7)" 
-            tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 10 }} 
+            stroke="rgba(255,255,255,0.95)" 
+            tick={{ fill: 'rgba(255,255,255,0.95)', fontSize: 10, fontWeight: '600' }} 
             tickLine={false}
             axisLine={false}
             tickMargin={12}
@@ -108,8 +108,8 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
             yAxisId="left"
             scale="log"
             domain={['auto', 'auto']}
-            stroke="rgba(255,255,255,0.7)" 
-            tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 10 }}
+            stroke="rgba(255,255,255,0.95)" 
+            tick={{ fill: 'rgba(255,255,255,0.95)', fontSize: 10, fontWeight: '600' }}
             tickLine={false}
             axisLine={false}
             tickMargin={8}
@@ -125,7 +125,7 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
               position="left" 
               offset={0}
               dx={-5}
-              style={{ fill: 'rgba(255,255,255,0.7)', fontSize: 10, fontWeight: 'bold', textAnchor: 'middle' }} 
+              style={{ fill: 'rgba(255,255,255,1.0)', fontSize: 10, fontWeight: '800', textAnchor: 'middle' }} 
             />
           </YAxis>
           {/* Right Y-Axis for Ratio Line */}
@@ -134,8 +134,8 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
             orientation="right"
             scale="log"
             domain={['auto', 'auto']}
-            stroke="rgba(255,255,255,0.7)" 
-            tick={{ fill: 'rgba(168,85,247,0.9)', fontSize: 11, fontWeight: 'bold' }}
+            stroke="rgba(168,85,247,0.8)" 
+            tick={{ fill: 'rgba(168,85,247,1.0)', fontSize: 11, fontWeight: '800' }}
             tickLine={false}
             axisLine={false}
             tickMargin={8}
@@ -147,7 +147,7 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
               position="right" 
               offset={0}
               dx={5}
-              style={{ fill: 'rgba(168,85,247,0.9)', fontSize: 10, fontWeight: 'bold', textAnchor: 'middle' }} 
+              style={{ fill: 'rgba(168,85,247,1.0)', fontSize: 10, fontWeight: '800', textAnchor: 'middle', filter: 'drop-shadow(0 0 2px rgba(168,85,247,0.4))' }} 
             />
           </YAxis>
           <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.05)' }} />

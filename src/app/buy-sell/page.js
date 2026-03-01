@@ -98,7 +98,7 @@ export default function VolumeDashboard() {
             title="HYPE Net Volume" 
             value={latestStats.tokens.HYPE ? `${latestStats.tokens.HYPE.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.HYPE.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
             icon={<TokenIcon symbol="HYPE" size={16} />}
-            change={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChangePercent ? `${latestStats.tokens.HYPE.dailyChangePercent.toFixed(1)}% vs yesterday` : null}
+            change={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChangePercent ? `${Math.abs(latestStats.tokens.HYPE.dailyChangePercent).toFixed(1)}%` : null}
             isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChangePercent >= 0}
           />
         </div>
@@ -107,7 +107,7 @@ export default function VolumeDashboard() {
             title="MON Net Volume" 
             value={latestStats.tokens.MON ? `${latestStats.tokens.MON.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.MON.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
             icon={<TokenIcon symbol="MON" size={16} />}
-            change={latestStats.tokens.MON && latestStats.tokens.MON.dailyChangePercent ? `${latestStats.tokens.MON.dailyChangePercent.toFixed(1)}% vs yesterday` : null}
+            change={latestStats.tokens.MON && latestStats.tokens.MON.dailyChangePercent ? `${Math.abs(latestStats.tokens.MON.dailyChangePercent).toFixed(1)}%` : null}
             isPositive={latestStats.tokens.MON && latestStats.tokens.MON.dailyChangePercent >= 0}
           />
         </div>
@@ -116,7 +116,7 @@ export default function VolumeDashboard() {
             title="INX Net Volume" 
             value={latestStats.tokens.INX ? `${latestStats.tokens.INX.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.INX.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
             icon={<TokenIcon symbol="INX" size={16} />}
-            change={latestStats.tokens.INX && latestStats.tokens.INX.dailyChangePercent ? `${latestStats.tokens.INX.dailyChangePercent.toFixed(1)}% vs yesterday` : null}
+            change={latestStats.tokens.INX && latestStats.tokens.INX.dailyChangePercent ? `${Math.abs(latestStats.tokens.INX.dailyChangePercent).toFixed(1)}%` : null}
             isPositive={latestStats.tokens.INX && latestStats.tokens.INX.dailyChangePercent >= 0}
           />
         </div>
@@ -125,7 +125,7 @@ export default function VolumeDashboard() {
             title="LIT Net Volume" 
             value={latestStats.tokens.LIT ? `${latestStats.tokens.LIT.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.LIT.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
             icon={<TokenIcon symbol="LIT" size={16} />}
-            change={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChangePercent ? `${latestStats.tokens.LIT.dailyChangePercent.toFixed(1)}% vs yesterday` : null}
+            change={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChangePercent ? `${Math.abs(latestStats.tokens.LIT.dailyChangePercent).toFixed(1)}%` : null}
             isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChangePercent >= 0}
           />
         </div>

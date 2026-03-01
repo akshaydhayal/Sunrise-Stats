@@ -79,13 +79,22 @@ export async function GET(req) {
     };
 
     if (processedData.overall.length > 0) {
-      latestStats.totalMarketCap = processedData.overall[processedData.overall.length - 1].totalMarketCap;
+      const last = processedData.overall[processedData.overall.length - 1];
+      latestStats.totalMarketCap = last.totalMarketCap;
+      latestStats.dailyChange = last.dailyChange;
+      const prev = processedData.overall.length > 1 ? processedData.overall[processedData.overall.length - 2].totalMarketCap : last.totalMarketCap;
+      latestStats.dailyChangePercent = prev > 0 ? (last.dailyChange / prev) * 100 : 0;
     }
 
     Object.keys(processedData.tokens).forEach(token => {
       const arr = processedData.tokens[token];
       if (arr.length > 0) {
-        latestStats.tokens[token] = arr[arr.length - 1];
+        const last = arr[arr.length - 1];
+        const prev = arr.length > 1 ? arr[arr.length - 2].marketcap : last.marketcap;
+        latestStats.tokens[token] = {
+          ...last,
+          dailyChangePercent: prev > 0 ? (last.dailyChange / prev) * 100 : 0
+        };
       }
     });
 

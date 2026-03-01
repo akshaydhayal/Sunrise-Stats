@@ -8,7 +8,11 @@ This dashboard aggregates data from multiple sources (Dune Analytics, CoinGecko)
 
 ---
 
-## 📸 Dashboard Previews
+## 📺 Project Demo
+### 🎥 Presentation Video
+[Watch the Demo](https://drive.google.com/file/d/1Gri-8h6gCGWfrxGAZPDvd-aqXtKGhTR-/view?usp=drive_link)
+
+### 📸 Product Screenshots
 
 ### Market Cap & Daily Change
 ![Market Cap Dashboard Screenshot](https://github.com/akshaydhayal/Sunrise-Assets-Stats/blob/main/demo/marketcap.png)

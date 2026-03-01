@@ -1,5 +1,7 @@
 # Sunrise Assets Dashboard 🌅
 
+Live Project Link: [https://sunrise-stats.vercel.app/](https://sunrise-stats.vercel.app/)
+
 A premium, interactive data dashboard built to track and visualize the performance of Canonical Assets deployed through the Sunrise protocol on Solana. 
 
 This dashboard aggregates data from multiple sources (Dune Analytics, CoinGecko) to provide deep, real-time insights into asset growth, trading dynamics, and ecosystem adoption.
@@ -8,22 +10,20 @@ This dashboard aggregates data from multiple sources (Dune Analytics, CoinGecko)
 
 ## 📸 Dashboard Previews
 
-> **Note:** Replace these placeholders with actual screenshots of your running application.
-
 ### Market Cap & Daily Change
-![Market Cap Dashboard Screenshot](docs/images/market-cap-demo.png)
+![Market Cap Dashboard Screenshot](https://github.com/akshaydhayal/Sunrise-Assets-Stats/blob/main/demo/marketcap.png)
 *Tracking aggregated market cap growth alongside daily percentage changes using a dual-axis composed chart.*
 
 ### Buy vs Sell Volume
-![Buy vs Sell Screenshot](docs/images/buy-sell-demo.png)
+![Buy vs Sell Screenshot](https://github.com/akshaydhayal/Sunrise-Assets-Stats/blob/main/demo/buy-sell.png)
 *Visualizing net-new buy volume versus sell volume using a custom bidirectional logarithmic scale.*
 
 ### DEX vs CEX Trading Volume
-![Trading Volume Screenshot](docs/images/trading-volume-demo.png)
+![Trading Volume Screenshot](https://github.com/akshaydhayal/Sunrise-Assets-Stats/blob/main/demo/trading-volume.png)
 *Comparing trading volume across Decentralized and Centralized exchanges.*
 
 ### Holder Growth
-![Holders Screenshot](docs/images/holders-demo.png)
+![Holders Screenshot](https://github.com/akshaydhayal/Sunrise-Assets-Stats/blob/main/demo/holders.png)
 *Tracking user adoption and new holder growth over time.*
 
 ---

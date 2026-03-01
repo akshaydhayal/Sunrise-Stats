@@ -17,10 +17,14 @@
   --glass-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.6); /* deeper shadow for floating effect */
   --glass-glow: inset 0 1px 1px rgba(255, 255, 255, 0.04);
   
-  --chart-mon: #3b82f6; 
-  --chart-hype: #10b981; 
-  --chart-inx: #8b5cf6; 
-  --chart-lit: #f59e0b; 
+   --chart-mon: #3b82f6; 
+   --chart-hype: #10b981; 
+   --chart-inx: #8b5cf6; 
+   --chart-lit: #f59e0b; 
+
+   /* High Vibrancy Neon Colors */
+   --neon-green: #00ff00; /* Brightest pure Green */
+   --neon-red: #ff0000;   /* Brightest pure Red */
 }
 
 * {
@@ -250,3 +254,13 @@ body {
   height: 250px;
   margin-top: 16px;
 }
+
+/* Neon Glow Utilities */
+.glow-green {
+  filter: drop-shadow(0 0 5px rgba(0, 255, 0, 0.4));
+}
+
+.glow-red {
+  filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.4));
+}
+

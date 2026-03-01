@@ -43,7 +43,7 @@ export default function TradingVolumeDashboard() {
   if (error) {
     return (
       <div className="glass-panel" style={{ textAlign: 'center' }}>
-        <h3 style={{ color: '#ef4444' }}>Error loading data</h3>
+        <h3 style={{ color: '#ff0000', fontWeight: 'bold' }}>Error loading data</h3>
         <p>{error}</p>
         <button className="btn-primary" onClick={fetchData} style={{ margin: '20px auto 0' }}>Retry</button>
       </div>

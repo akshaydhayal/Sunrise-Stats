@@ -1,6 +1,6 @@
 "use client";
 import React, { useMemo } from 'react';
-import { ComposedChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { ComposedChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Label } from 'recharts';
 
 export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cexKey = "total_cex_volume", height = 350 }) {
   const ratioData = useMemo(() => {
@@ -56,7 +56,7 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
           <p style={{ margin: 0, fontWeight: 'bold', marginBottom: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '4px' }}>{label}</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: '16px' }}>
-              <span style={{ color: '#a855f7' }}>CEX:DEX Ratio:</span>
+              <span style={{ color: '#e879f9', fontWeight: 'bold' }}>CEX:DEX Ratio:</span>
               <span>{ratio}x</span>
             </div>
             <div style={{ height: '1px', backgroundColor: 'rgba(255,255,255,0.2)', margin: '4px 0' }}></div>
@@ -92,12 +92,12 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
   return (
     <div style={{ position: 'relative', width: '100%', height: height, marginTop: '16px' }}>
       <ResponsiveContainer width="100%" height="100%">
-        <ComposedChart data={ratioData} margin={{ top: 20, right: 10, left: 10, bottom: 25 }}>
+        <ComposedChart data={ratioData} margin={{ top: 10, right: 30, left: 30, bottom: 20 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
           <XAxis 
             dataKey="date" 
-            stroke="rgba(255,255,255,0.4)" 
-            tick={{ fill: 'rgba(255,255,255,0.4)', fontSize: 10 }} 
+            stroke="rgba(255,255,255,0.7)" 
+            tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 10 }} 
             tickLine={false}
             axisLine={false}
             tickMargin={12}
@@ -108,8 +108,8 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
             yAxisId="left"
             scale="log"
             domain={['auto', 'auto']}
-            stroke="rgba(255,255,255,0.4)" 
-            tick={{ fill: 'rgba(255,255,255,0.2)', fontSize: 10 }}
+            stroke="rgba(255,255,255,0.7)" 
+            tick={{ fill: 'rgba(255,255,255,0.7)', fontSize: 10 }}
             tickLine={false}
             axisLine={false}
             tickMargin={8}
@@ -118,20 +118,38 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
               if (value >= 1000) return `$${(value / 1000).toFixed(1)}K`;
               return `$${value}`;
             }}
-          />
+          >
+            <Label 
+              value="Volume ($)" 
+              angle={-90} 
+              position="left" 
+              offset={0}
+              dx={-5}
+              style={{ fill: 'rgba(255,255,255,0.7)', fontSize: 10, fontWeight: 'bold', textAnchor: 'middle' }} 
+            />
+          </YAxis>
           {/* Right Y-Axis for Ratio Line */}
           <YAxis 
             yAxisId="right"
             orientation="right"
             scale="log"
             domain={['auto', 'auto']}
-            stroke="rgba(255,255,255,0.4)" 
-            tick={{ fill: 'rgba(168,85,247,0.8)', fontSize: 11, fontWeight: 'bold' }}
+            stroke="rgba(255,255,255,0.7)" 
+            tick={{ fill: 'rgba(168,85,247,0.9)', fontSize: 11, fontWeight: 'bold' }}
             tickLine={false}
             axisLine={false}
             tickMargin={8}
             tickFormatter={(value) => `${value}x`}
-          />
+          >
+            <Label 
+              value="Ratio (x)" 
+              angle={90} 
+              position="right" 
+              offset={0}
+              dx={5}
+              style={{ fill: 'rgba(168,85,247,0.9)', fontSize: 10, fontWeight: 'bold', textAnchor: 'middle' }} 
+            />
+          </YAxis>
           <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.05)' }} />
           
           {/* Background Volume Bars */}

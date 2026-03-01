@@ -11,7 +11,7 @@ export default function MetricCard({ title, value, icon, change, isPositive }) {
         {value}
       </div>
       {change && (
-        <div style={{ color: isPositive ? '#10b981' : '#ef4444', fontSize: '14px', fontWeight: '500' }}>
+        <div style={{ color: isPositive ? '#00ff00' : '#ff0000', fontSize: '14px', fontWeight: 'bold' }}>
           {isPositive ? '+' : ''}{change}
         </div>
       )}

@@ -17,10 +17,10 @@ export default function AboutPage() {
           What is Sunrise?
         </h3>
         <p style={{ fontSize: '16px', lineHeight: '1.6', color: 'var(--text-main)', marginBottom: '16px' }}>
-          Sunrise is a decentralized finance (DeFi) initiative dedicated to bringing high-quality, Canonical assets to the high-performance <strong>Solana</strong> blockchain. By facilitating this bridge, Sunrise aims to unlock deeper liquidity, faster transaction finality, and significantly lower fees for users trading and holding these premium assets.
+          Sunrise is the core infrastructure for <strong>Canonical Assets</strong> on Solana. It provides a standardized framework for deploying and managing premium assets (including <strong>MON, HYPE, INX, and LIT</strong>) originally from other ecosystems, ensuring they are native, liquid, and secure within the Solana DeFi landscape.
         </p>
         <p style={{ fontSize: '16px', lineHeight: '1.6', color: 'var(--text-main)' }}>
-          Currently, Sunrise tracks the growth and adoption of key bridged assets such as <strong>MON, HYPE, INX, and LIT</strong>. Our dashboard provides real-time insights into market capitalization, trading volume, and unique token holders, empowering the community with transparent, on-chain data powered by Dune Analytics.
+          By establishing a single source of truth for these assets, Sunrise eliminates liquidity fragmentation and provides protocols and users with the most efficient way to interact with bridged value. Sunrise isn't just a bridge; it's the foundation for the next wave of high-performance assets on the world's most scalable blockchain.
         </p>
       </div>
 
@@ -54,9 +54,9 @@ export default function AboutPage() {
             <div style={{ marginBottom: '16px' }}>
               <TrendingUp size={32} color="var(--chart-mon)" />
             </div>
-            <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>Data Driven</h4>
+            <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '8px' }}>Unified Liquidity</h4>
             <p style={{ color: 'var(--text-muted)', fontSize: '14px', lineHeight: '1.5' }}>
-              Open, transparent tracking of Market Cap, Net Volume, and Holder statistics so you stay informed.
+              Solving bridge fragmentation by providing the definitive canonical version of top assets across Solana.
             </p>
           </div>
         </div>

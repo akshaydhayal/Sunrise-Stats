@@ -96,36 +96,36 @@ export default function VolumeDashboard() {
         <div className="col-span-3">
           <MetricCard 
             title="HYPE Net Volume" 
-            value={latestStats.tokens.HYPE ? `${latestStats.tokens.HYPE.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.HYPE.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
+            value={latestStats.tokens.HYPE ? `${latestStats.tokens.HYPE.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.HYPE.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
             icon={<TokenIcon symbol="HYPE" size={16} />}
-            change={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChangePercent ? `${Math.abs(latestStats.tokens.HYPE.dailyChangePercent).toFixed(1)}%` : null}
+            change={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChangePercent ? `${Math.abs(latestStats.tokens.HYPE.dailyChangePercent).toFixed(2)}%` : null}
             isPositive={latestStats.tokens.HYPE && latestStats.tokens.HYPE.dailyChangePercent >= 0}
           />
         </div>
         <div className="col-span-3">
           <MetricCard 
             title="MON Net Volume" 
-            value={latestStats.tokens.MON ? `${latestStats.tokens.MON.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.MON.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
+            value={latestStats.tokens.MON ? `${latestStats.tokens.MON.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.MON.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
             icon={<TokenIcon symbol="MON" size={16} />}
-            change={latestStats.tokens.MON && latestStats.tokens.MON.dailyChangePercent ? `${Math.abs(latestStats.tokens.MON.dailyChangePercent).toFixed(1)}%` : null}
+            change={latestStats.tokens.MON && latestStats.tokens.MON.dailyChangePercent ? `${Math.abs(latestStats.tokens.MON.dailyChangePercent).toFixed(2)}%` : null}
             isPositive={latestStats.tokens.MON && latestStats.tokens.MON.dailyChangePercent >= 0}
           />
         </div>
         <div className="col-span-3">
           <MetricCard 
             title="INX Net Volume" 
-            value={latestStats.tokens.INX ? `${latestStats.tokens.INX.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.INX.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
+            value={latestStats.tokens.INX ? `${latestStats.tokens.INX.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.INX.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
             icon={<TokenIcon symbol="INX" size={16} />}
-            change={latestStats.tokens.INX && latestStats.tokens.INX.dailyChangePercent ? `${Math.abs(latestStats.tokens.INX.dailyChangePercent).toFixed(1)}%` : null}
+            change={latestStats.tokens.INX && latestStats.tokens.INX.dailyChangePercent ? `${Math.abs(latestStats.tokens.INX.dailyChangePercent).toFixed(2)}%` : null}
             isPositive={latestStats.tokens.INX && latestStats.tokens.INX.dailyChangePercent >= 0}
           />
         </div>
         <div className="col-span-3">
           <MetricCard 
             title="LIT Net Volume" 
-            value={latestStats.tokens.LIT ? `${latestStats.tokens.LIT.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.LIT.net_buy_volume) / 1000).toFixed(1)}K` : '$0'}
+            value={latestStats.tokens.LIT ? `${latestStats.tokens.LIT.net_buy_volume < 0 ? '-' : ''}$${(Math.abs(latestStats.tokens.LIT.net_buy_volume) / 1000).toFixed(2)}K` : '$0'}
             icon={<TokenIcon symbol="LIT" size={16} />}
-            change={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChangePercent ? `${Math.abs(latestStats.tokens.LIT.dailyChangePercent).toFixed(1)}%` : null}
+            change={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChangePercent ? `${Math.abs(latestStats.tokens.LIT.dailyChangePercent).toFixed(2)}%` : null}
             isPositive={latestStats.tokens.LIT && latestStats.tokens.LIT.dailyChangePercent >= 0}
           />
         </div>

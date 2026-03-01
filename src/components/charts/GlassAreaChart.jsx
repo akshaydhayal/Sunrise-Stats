@@ -59,6 +59,14 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
               <stop offset="5%" stopColor={fill} stopOpacity={0.8}/>
               <stop offset="95%" stopColor={fill} stopOpacity={0}/>
             </linearGradient>
+            <linearGradient id="posGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--neon-green)" stopOpacity={1}/>
+              <stop offset="100%" stopColor="var(--neon-green)" stopOpacity={0.4}/>
+            </linearGradient>
+            <linearGradient id="negGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--neon-red)" stopOpacity={1}/>
+              <stop offset="100%" stopColor="var(--neon-red)" stopOpacity={0.4}/>
+            </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
           <XAxis 
@@ -121,7 +129,7 @@ export default function GlassAreaChart({ data, dataKey, stroke, fill, height = 3
           <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.05)' }} />
           <Bar yAxisId="left" dataKey="dailyChange" name="Daily Change">
             {data && data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={(entry.dailyChange || 0) >= 0 ? '#00ff00' : '#ff0000'} opacity={1.0} />
+              <Cell key={`cell-${index}`} fill={(entry.dailyChange || 0) >= 0 ? 'url(#posGradient)' : 'url(#negGradient)'} />
             ))}
           </Bar>
           <Area 

@@ -51,6 +51,16 @@ export default function GlassBarChart({ data, dataKey, height = 350 }) {
     <div style={{ position: 'relative', width: '100%', height: height, marginTop: '16px' }}>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={data} margin={{ top: 10, right: 10, left: 30, bottom: 20 }}>
+          <defs>
+            <linearGradient id="barPosGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--neon-green)" stopOpacity={1}/>
+              <stop offset="100%" stopColor="var(--neon-green)" stopOpacity={0.4}/>
+            </linearGradient>
+            <linearGradient id="barNegGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--neon-red)" stopOpacity={1}/>
+              <stop offset="100%" stopColor="var(--neon-red)" stopOpacity={0.4}/>
+            </linearGradient>
+          </defs>
           <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
           <XAxis 
             dataKey="date" 
@@ -87,7 +97,7 @@ export default function GlassBarChart({ data, dataKey, height = 350 }) {
           <Bar dataKey={dataKey} radius={[4, 4, 0, 0]}>
             {
               data && data.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={entry[dataKey] >= 0 ? '#00ff00' : '#ff0000'} opacity={1.0} />
+                <Cell key={`cell-${index}`} fill={entry[dataKey] >= 0 ? 'url(#barPosGradient)' : 'url(#barNegGradient)'} />
               ))
             }
           </Bar>

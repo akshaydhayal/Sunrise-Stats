@@ -93,6 +93,16 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
     <div style={{ position: 'relative', width: '100%', height: height, marginTop: '16px' }}>
       <ResponsiveContainer width="100%" height="100%">
         <ComposedChart data={ratioData} margin={{ top: 10, right: 30, left: 30, bottom: 20 }}>
+          <defs>
+            <linearGradient id="barGradientDex" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--neon-orange)" stopOpacity={1}/>
+              <stop offset="100%" stopColor="var(--neon-orange)" stopOpacity={0.3}/>
+            </linearGradient>
+            <linearGradient id="barGradientCex" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--neon-blue)" stopOpacity={1}/>
+              <stop offset="100%" stopColor="var(--neon-blue)" stopOpacity={0.3}/>
+            </linearGradient>
+          </defs>
           <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.05)" vertical={false} />
           <XAxis 
             dataKey="date" 
@@ -125,7 +135,7 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
               position="left" 
               offset={0}
               dx={-5}
-              style={{ fill: 'rgba(255,255,255,1.0)', fontSize: 10, fontWeight: '800', textAnchor: 'middle' }} 
+              style={{ fill: '#fff', fontSize: 10, fontWeight: '800', textAnchor: 'middle' }} 
             />
           </YAxis>
           {/* Right Y-Axis for Ratio Line */}
@@ -134,8 +144,8 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
             orientation="right"
             scale="log"
             domain={['auto', 'auto']}
-            stroke="rgba(168,85,247,0.8)" 
-            tick={{ fill: 'rgba(168,85,247,1.0)', fontSize: 11, fontWeight: '800' }}
+            stroke="rgba(232,121,249,0.8)" 
+            tick={{ fill: '#e879f9', fontSize: 11, fontWeight: '800' }}
             tickLine={false}
             axisLine={false}
             tickMargin={8}
@@ -147,14 +157,14 @@ export default function GlassRatioChart({ data, dexKey = "total_dex_volume", cex
               position="right" 
               offset={0}
               dx={5}
-              style={{ fill: 'rgba(168,85,247,1.0)', fontSize: 10, fontWeight: '800', textAnchor: 'middle', filter: 'drop-shadow(0 0 2px rgba(168,85,247,0.4))' }} 
+              style={{ fill: '#e879f9', fontSize: 10, fontWeight: '800', textAnchor: 'middle', filter: 'drop-shadow(0 0 2px rgba(232,121,249,0.4))' }} 
             />
           </YAxis>
           <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(255,255,255,0.05)' }} />
           
           {/* Background Volume Bars */}
-          <Bar yAxisId="left" dataKey="safeDex" name="DEX Volume" fill="var(--primary-orange)" opacity={0.8} radius={[4, 4, 0, 0]} />
-          <Bar yAxisId="left" dataKey="safeCex" name="CEX Volume" fill="#3b82f6" opacity={0.5} radius={[4, 4, 0, 0]} />
+          <Bar yAxisId="left" dataKey="safeDex" name="DEX Volume" fill="url(#barGradientDex)" radius={[4, 4, 0, 0]} />
+          <Bar yAxisId="left" dataKey="safeCex" name="CEX Volume" fill="url(#barGradientCex)" radius={[4, 4, 0, 0]} />
           
           {/* Foreground Ratio Line */}
           <Line yAxisId="right" type="monotone" dataKey="safeRatioValue" name="CEX:DEX Ratio" stroke="#e879f9" strokeWidth={2} dot={false} activeDot={{ r: 5, fill: '#e879f9', stroke: '#fff', strokeWidth: 2 }} />

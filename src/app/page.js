@@ -97,7 +97,7 @@ export default function Dashboard() {
           <MetricCard 
             title="Total Assets Cap" 
             value={`$${(latestStats.totalMarketCap / 1000000).toFixed(2)}M`}
-            change={latestStats.dailyChangePercent ? `${Math.abs(latestStats.dailyChangePercent).toFixed(1)}%` : null}
+            change={latestStats.dailyChangePercent ? `${Math.abs(latestStats.dailyChangePercent).toFixed(2)}%` : null}
             icon={<DollarSign size={16} color="var(--primary-orange)" />}
             isPositive={latestStats.dailyChange >= 0}
           />

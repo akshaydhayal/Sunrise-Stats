@@ -66,7 +66,7 @@ export async function POST(req) {
     } else if (syncType === 'volume') {
       let insertedVolume = 0;
       let updatedVolume = 0;
-      const volume_query_result = await client.getLatestResult({ queryId: 6828458 });
+      const volume_query_result = await client.getLatestResult({ queryId: 6747709 });
       if (volume_query_result && volume_query_result.result && volume_query_result.result.rows) {
         const vRows = volume_query_result.result.rows;
         for (const row of vRows) {
@@ -107,7 +107,7 @@ export async function POST(req) {
     } else if (syncType === 'holders') {
       let insertedHolders = 0;
       let updatedHolders = 0;
-      const holders_query_result = await client.getLatestResult({ queryId: 6828473 });
+      const holders_query_result = await client.getLatestResult({ queryId: 6733727 });
       if (holders_query_result && holders_query_result.result && holders_query_result.result.rows) {
         const hRows = holders_query_result.result.rows;
         for (const row of hRows) {

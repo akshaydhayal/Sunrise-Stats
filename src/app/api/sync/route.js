@@ -147,10 +147,10 @@ export async function POST(req) {
       let updatedTrading = 0;
       
       const duneQueries = {
-        MON: 6828503,
-        HYPE: 6828508,
-        LIT: 6828492,
-        INX: 6828482
+        MON: 6757505,
+        HYPE: 6757494,
+        LIT: 6757234,
+        INX: 6757510
       };
       
       const cgEndpoints = {
